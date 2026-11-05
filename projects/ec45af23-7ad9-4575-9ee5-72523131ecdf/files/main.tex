@@ -1,0 +1,280 @@
+
+% =============================================================================
+% GEODERMA MANUSCRIPT TEMPLATE
+% Elsevier elsarticle class
+% =============================================================================
+
+\documentclass[preprint,12pt]{elsarticle}
+
+% -----------------------------------------------------------------------------
+% 1. PACKAGES
+% -----------------------------------------------------------------------------
+
+% Mathematics
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% Figures
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+
+% Tables
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{threeparttable}
+
+% SI units
+\usepackage{siunitx}
+\sisetup{
+    detect-all,
+    separate-uncertainty = true
+}
+
+% Text formatting
+\usepackage{lineno}
+\usepackage{microtype}
+
+% Hyperlinks and cross-referencing
+\usepackage[colorlinks=true,
+            linkcolor=blue,
+            citecolor=blue,
+            urlcolor=blue]{hyperref}
+
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+% -----------------------------------------------------------------------------
+% 2. JOURNAL AND BIBLIOGRAPHY SETTINGS
+% -----------------------------------------------------------------------------
+
+% Elsevier bibliography style
+% Use numerical citations: [1], [2], [3]
+\bibliographystyle{elsarticle-num}
+
+% -----------------------------------------------------------------------------
+% 3. JOURNAL METADATA
+% -----------------------------------------------------------------------------
+
+\journal{Geoderma}
+
+% -----------------------------------------------------------------------------
+% TITLE AND AUTHORS
+% -----------------------------------------------------------------------------
+\begin{document}
+\begin{frontmatter}
+
+\title{Feedstock-dependent effects of enhanced rock weathering on soil organic matter dynamics and persistence}
+
+\author[aff1]{Teneille Nel\corref{cor1}}
+\ead{first.author@email.com}
+
+\author[aff1]{Lucilla Boito}
+\ead{second.author@email.com}
+
+\author[aff1]{Laura Steinwidder}
+
+\author[aff2]{Carlos A. Sierra}
+
+\author[aff1]{Sara Vicca}
+
+\address[aff1]{
+    Department of Soil Science,
+    University Name,
+    City,
+    Country
+}
+
+\address[aff2]{
+    Department of Environmental Science,
+    University Name,
+    City,
+    Country
+}
+
+\cortext[cor1]{Corresponding author}
+
+\begin{abstract}
+Write your abstract here.
+\end{abstract}
+
+\begin{keyword}
+Soil organic carbon
+\sep Enhanced rock weathering
+\sep Soil geochemistry
+\sep Carbon persistence
+\end{keyword}
+
+\end{frontmatter}
+% -----------------------------------------------------------------------------
+% 7. MAIN TEXT
+% -----------------------------------------------------------------------------
+
+% Uncomment for line numbering during manuscript review
+% \linenumbers
+
+\section{Introduction}
+\label{sec:introduction}
+
+Significant post-Industrial Revolution atmospheric CO$_2$ increases necessitates effective carbon dioxide removal (CDR) technologies. Enhanced rock weathering (ERW), which involves the addition of crushed silicate rocks to the soil, has the potential to contribute to long-term atmospheric CO$_2$ removal by accelerating natural silicate weathering (ref: hartmann 2008, manning 2024). This process removes atmospheric CO$_2$  by converting it into bicarbonate in solution, enhancing inorganic C storage according to the reaction below: 
+
+\begin{equation}
+    \mathrm{CaSiO_3 + CO_2 + 2H_2O
+    \rightarrow CaCO_3 + H_4SiO_4}
+    \label{eq:carbonation}
+\end{equation}
+
+Agricultural lands suit both ERW and soil carbon sequestration (SCS) due to large available areas and synergies with existing management. While ERW research focused on inorganic C sequestration, recent studies show it also impacts organic C fluxes (potentially at scales several order or magnitude larger than SIC fluxes), either increasing or depleting soil organic matter (SOM) stores (ref: Vicca 2022, Steinwidder 2025, sokol 2024). Evaluating ERW's effects on SOM dynamics is critical for accurate net C accounting (ref: Niron 2024), as farmers should be able to claim carbon credits for increases in SOC alongside and independently of claims for credits for ERW (SIC) (ref: manning 2024).
+  ERW releases divalent cations which create electrostatic brudges between organic matter and clay mineral surfaces or induce secondary mineral formation (e.g. Al/Fe (oxy)(hydr)oxides), which can stabilize SOM as mineral-associated organic matter (MAOM) (ref: Vienne 2025). Conversely, ERW can trigger organic C loss when elevated soil pH and release of micro-nutrients stimulates microbial activity and SOM decomposition. Increased production of organic acids by plant roots or microbes to mine nutrients from the rock material, could also destabilize mineral-organic associations, leading to desorption of previously protected organic C from mineral surfaces, exposing it to microbial breakdown (ref: Niron 2024, sokol 2024). Increased organic matter inputs due to increased plant productivity can also acellerate decomposition losses (ref: Stoner 2021). 
+
+  **SOM stability pools and function**
+  The persistence of SOC is dependent on its resistance to microbial decomposition. Six broad categories of the controls of SOM persistence were recently summarized in a review by (ref: rocci 2024); namely, physical inaccessibility, organo-mineral and -metal stabilization, biodegradability of plant inputs, abiotic environmental factors (climate and soil chemistry), biochemical reactivity and diversity (recalcitrance) and microbial physiology and morphology. Since SOM is highly heterogeneous, separating SOM into multiple components that differ fundamentally in their formation, function and persistence, is required to accurately predict vulnerability of bulk SOC to environmental changes (lavallee 2019). MAOM is considered to be composed of simple molecular compounds that are protected via binding to mineral surfaces via van der Waals forces, hydorgen bonding, covalent bonding, complexation, cation bridging and pore sorption, while POM relies more on lability and aggregate protection. 
+  
+  **persistence and 14C**
+  Assessment and management of both the amount of net carbon inputs and the transit time of carbon in soil are key to mitigate and avoid climate change (ref: Sierra 2021, xia 2013). While ERW effects on SOC accrual are emerging (ref: Boito 2025, Steinwidder 2025), persistence remains crucial for evaluating climate benefits and (ref: Manning 2024) noted that assigning SOC a precise stabilisation time remains a challenging task requiring further research efforts. The response of topsoil SOM is of particular importance as it is in close contact with the atmosphere and the most vulnerable to decomposition (ref: mill2 2014). Fast-cycling carbon can be studied in relatively short-term experiments; however, the bulk of soil C is found in slow-cycling pools that are less amenable to experimental investigation (ref: mills 2014). Therefore, a suitable approach to assess soil C persistence at these longer timescales is by measuring ($^14$C) and observed C stocks to constrain models of temporal SOM dynamics, assuming steady-state conditions (ref: Sierra 2014). This may be achieved to estimating centennial turnover based on the half0life of naturally-formed 14C, while the anthropogenic bomb-14C spike of the mid 20th century provides estimates of atmospheric 14C on decadal timescales. (ref: Mills 2014). 
+
+  **pH gradient**
+  Mechanisms of SOC stabilization shift with rising pH from predominantly organo-metal complexation to association with short-range-order phases, to Ca complexation and ncation bridging with phyllosilicates, therefore decreasing MAOM accumulation. (ref: Zhou 2024, rasmussen 2018). Soil pH is also a known driver of SOM decomposition as it controls microbial diversity and activity (ref: wang and kuzyakov 2024). A study by (ref: steinwidder 2025) found evidence for release of SOC from MAOM triggered by a pH increase in soils treated with silicate rock powder. However, increased rhizosphere respiration is usually also accompanied by increased photosynthesis and C inputs, therefore offsetting C loss. (kuzyakov and cheng 2001). In addition, roots and rhizodeposits are pre-cursors of MAOM and facilitate aggregate formation (ref: villarino 2021, amelung 2023). 
+
+**secondary minerals**
+With ERW< where weathering rates are higher than natural weathering, soil water solute concentrations increase, which may reduce primary mineral dissolution rates and stimulates formation of secondary minerals (bluem 2016, steinwidder 2025). Subglacial grinding of bedrock is known to comprise of amorphous Si, Al and Fe phases, which are precursors for more crystalline phases such as physllosilicates (rampe 2022, Behrens 2015). Formation of clays as a result of ERW may influence the rate of the weathering reaction, which may reduce the efficacy of inorganic CDR (ref: manning 2024). On the other hand, newly-created reactive short-range-order (SRO) minerals (e.g. allophane, ferrihydrite) produced from weathered silicate rock could increase the amount of MAOM in soil by providing more surface sites for organic matter to bind (Sokol 2024, steinwidder 2025), thus providing a mechanism for long-term stabiliztaion of SOM in young soils. 
+A study by (ref: steinwidder 2025) found that base cations released by enhanced weathering of silicates were not recovered in sequentially extracted pools, implying their possible transition into more stable mineral pools such as clays or other secondary phases. Chemisorption is considered the dominant control of C turnover in more weathered soils with a greater proportion of crystalline aluminosilicate or Fe and Al(oxy)hydroxides (sesquioxides) (ref: khomo 2017). Turnover time of bulk soil C in a subhumid region was strongly correlated not merely to smectite content (ref: khomo 2017), as 2: 1 clays have high charge density and high surface area, therefore high affinity for C. Meanwhile the overall C inventory was more related to crystalline Fe and Al oxyhydroxides. (ref: khomo 2017). 
+
+
+    **cations**
+ERW can release divalent cations such as Ca2+ which can enhance SOM stabilization via cation bridging, co-precipitation with carbonate minerals and prodution of microbial biofilms (sokol 2024, rowley 2018, buss 2024). 
+  
+  **Hypotheses and objectives**
+  This study investigates how ERW-stimulated mechanisms like organo-mineral associations and occlusion affect SOM (de)stabilization, contributing a suite of SOC persistence metrics for an ongoing Belgian ERW field trial. We hypothesize that ERW-induced secondary mineral formation and cation release contribute to soil aggregation and SOC binding, while pH increase associated with mineral weathering could lead to SOC mineralization and desorption of SOM, decreasing stability of both labile fPOM and MAOM. The objectives of this study are to quantify SOM persistence of different stability fractions and examine abiotic drivers of SOC stability.
+
+
+The objectives of this research are to:
+  
+\section{Materials and methods}
+\label{sec:methods}
+
+\subsection{Study site}
+\label{subsec:study_site}
+
+Describe the study site.
+
+\subsection{Experimental design}
+\label{subsec:experimental_design}
+
+Describe the experimental design and treatments.
+
+\subsection{Soil analyses}
+\label{subsec:soil_analyses}
+
+Describe the analytical methods.
+
+\subsection{Statistical analyses}
+\label{subsec:statistics}
+
+Describe the statistical analyses and models.
+
+% Example mathematical equation
+\begin{equation}
+    SOC_{\mathrm{stock}} =
+    C_{\mathrm{total}} \times
+    \rho_{\mathrm{b}} \times
+    z \times
+    A
+    \label{eq:soc_stock}
+\end{equation}
+
+where $C_{\mathrm{total}}$ is the soil carbon concentration,
+$\rho_{\mathrm{b}}$ is bulk density, $z$ is soil depth,
+and $A$ is the area conversion factor.
+
+\section{Results}
+\label{sec:results}
+
+\subsection{Soil geochemical properties}
+\label{subsec:geochemistry}
+
+Present your results here.
+
+\subsection{Soil carbon fractions}
+\label{subsec:carbon_fractions}
+
+Present your results here.
+Bulk SOC changes are difficult to detect especially at lower sampling density due to soil heterogeneity (poeplau 2022, steinwidder 2025). 
+
+\subsection{Relationships between soil properties}
+\label{subsec:relationships}
+
+Present your results here.
+
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Effects of treatment on soil properties}
+\label{subsec:treatment_effects}
+
+A study by (ref: steinwidder 2025) found that the majority of base cations released by ERW were sorbed to the exchangeable complex or bound in secondary mineral form e.g. (hydr)oxides and/ or alumuninosilicate clays, but only a negligible amount was found in pedogenic carbonates. 
+
+  In a 15-month mesocosm experiment, SOC stocks were unaffected by silicate amentment, likely due to increased plant C inputs, off-setting initial organic C losses by mineralization (ref: Steinwidder 2025). 
+  
+\subsection{Mechanisms of soil carbon stabilization}
+\label{subsec:stabilization}
+  
+  **MAOM saturation**
+  A global dataset of (ref Zhou 2024) supported the concept of MAOM saturation, a point at which there are no longer mineral surface binding locations available for further direct association of organic matter. A greater carbon deficit increases MAOM transfer efficiency from POM to MAOM and MAOM stabilization (stewart 2008). 
+
+  **secondary minerals**
+In soils under strong wet-dry cycling conditions, the existence of metastable minerals are more transient and the minerals rapidly ripen to kaoline, therefore not only the strenght of C association with mineral phases, but also the timescale of mineral stability in the pedogenetic setting must be considered (khomo 2017). 
+
+  A study by (ref: sokol 2024) found reduced MAOM stocks and POM accrual in topsoil of irrigated cropland fields in California after 2 years of crushed rock additions, which was partly attributed of reduced microbial biomass and decreased transformation of POM to MAOM. 
+
+  A study by (ref Steinwidder 2025) found that SOC was stabilized in the amorphous mineral pool with steel slag application, while silicate amendment stimulated formation of macro-aggregates and occlusion of SOC within them. 
+  
+\subsection{Implications for enhanced rock weathering}
+\label{subsec:erw_implications}
+
+Discuss the broader implications.
+
+\section{Conclusions}
+\label{sec:conclusions}
+
+Summarize the main findings and their implications.
+
+% -----------------------------------------------------------------------------
+% 8. ACKNOWLEDGEMENTS
+% -----------------------------------------------------------------------------
+
+\section*{Acknowledgements}
+
+Acknowledge funding, technical assistance, and collaborators.
+
+% -----------------------------------------------------------------------------
+% 9. DECLARATIONS
+% -----------------------------------------------------------------------------
+
+\section*{Declaration of competing interest}
+
+The authors declare that they have no known competing
+financial interests or personal relationships that could
+have appeared to influence the work reported in this paper.
+
+\section*{Data availability}
+
+The data supporting the findings of this study are available
+from the corresponding author upon reasonable request.
+
+% -----------------------------------------------------------------------------
+% 10. REFERENCES
+% -----------------------------------------------------------------------------
+
+\bibliography{references}
+
+% -----------------------------------------------------------------------------
+% 11. SUPPLEMENTARY MATERIAL
+% -----------------------------------------------------------------------------
+
+% If supplementary material is submitted as a separate file,
+% reference it in the manuscript as appropriate.
+
+\end{document}
