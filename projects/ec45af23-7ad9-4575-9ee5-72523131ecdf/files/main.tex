@@ -25,6 +25,9 @@
 \usepackage{array}
 \usepackage{multirow}
 \usepackage{threeparttable}
+\usepackage{makecell}
+\usepackage{pdflscape}
+\usepackage{array}
 
 % SI units
 \usepackage{siunitx}
@@ -184,38 +187,186 @@ The objectives of this study are to (i) quantify the persistence of distinct SOM
 \subsection{Study site}
 \label{subsec:study_site}
 
-Describe the study site.
+The field experimental site (property of Mintjens Group NV) is located in Westmalle, Belgium (52 $\deg$ 17' 50.3" N, 4 $\deg$ 39' 54.6" E). The region experiences a temperature maritime climate with a mean annual temperature of 11 $\deg$C and mean annual precipitation of 850 mm \citep(Meteovista). The soil of the field site is classified as a loamy sand (sand: 79.58\%, silt: 19.18 \%, clay: 1.24\%) Gleyic Podzol \citep(WorldReferenceBaseforSoilResources2014) with pH of 6.66, SOC content of 2.7\% and CEC of 7.6 cmol$_c$ kg$^{-1}$. The field covers approximately 4.9 ha and is used for cultivation of fodder crops (e.g. maize, ryegrass) with winter cover crops (triticale, mustard) and an occasional fallow season with retention of maize plant residues. The field is fertilized annually with both manure (170 kg nitrogen ha$^{-1}$) and calcium ammonium nitrate (150 kg ha$^{-1}$; nitrate = 13.5\%, ammonium = 13.5\%, calcium = 6\%) (`<### comment id: 95AzEiO0v-goF5YHGrw1n, user: teneille.nel@gmail.com, time: 1794827264209, content64: 'Ym9pdG8gMjAyNiBpbiBwcmVzcw==', responses: [], resolved: false ###>`ref`</### comment id: 95AzEiO0v-goF5YHGrw1n ###>`) and all agricultural operations are performed using machinery. Maize is generally planted between April and June and harvested between September and November. 
 
 \subsection{Experimental design}
 \label{subsec:experimental_design}
 
-Describe the experimental design and treatments.
-
+Four treatments were randomly applied to the field in May 2023, after ploughing and before maize (\textit{Zea Mays}, 1753) sowing. Three treatments were silicates provided by Rheinische Provinzial- Basalt- und Lavawerke (Bolsdorfer basalt, Hühnerberg basalt, Eifelgold tephrite) and the frouth was lime (CaCO$_3$, AVEVE). The mining locations and dominant mineralogy of treatments are given in \ref{tab:amendment_origins}; elemental composition of silicates are given in (`<### comment id: 9Iv-iSLQidI7608rqd_Qs, user: teneille.nel@gmail.com, time: 1794831546923, content64: 'Qm9pdG8gMjAyNiBpbiBwcmVzcw==', responses: [], resolved: false ###>`ref`</### comment id: 9Iv-iSLQidI7608rqd_Qs ###>`). Each treatment, as well as an unamended control, was established in triplicate, resulting in a total of 15 plots (each covering 10 x 10 m). 
+  
+Silicates were applied at 50 t ha$^{-1}$, while lime was applied at 2 t ha$^{-1}$ to reflect common ERW and agricultural practices \citep{steinwidder2025beyond}. Amendments were manually distributed on the soil surface and subsequently incorporated into the soil with sowing of maize in May 2023. Topsoils (0-10 cm) were sampled in triplicate from the centre of each plot (5 x 5 m) in April 2023 (before amendment) using an auger for baseline geochemical characterization (carbon, pH, EC and CEC measurements) and five months after amendment (October 2023) for inital geochemical response measurements. In February 2026, topsoils were sampled again for extensive endpoint physicochemical analyses. Triplicate soil samples from each plot were composited, dried at 50 $\deg$ C and sieved (2 mm mesh diameter). 
+  
 \subsection{Soil analyses}
 \label{subsec:soil_analyses}
 
-Describe the analytical methods.
-  The FeDCB/Fe total ratio relates total pedogenetically transformed Fe phases extracted with DCB, to total Fe, a value which increases with soil development as more crystalline oxide forms. \citep{maier2025parent}
+\subsubsection{General soil characterization}
+  
+Soil pH and EC were measured in distilled water (1: 2.5) using a 914 pH/Conductometer (Metrohm, CH) and soil CEC and base saturation were determined by ammonium acetate (pH = 7) extraction followed by quantitative analysis of cations using an iCAP6300 Duo inductively coupled plasma optical emission spectrometer (ICP-OES, Thermo Fisher Scientific, UK) and determination of titratable acidity; further analytical details are specified in `<### comment id: hTGwA49I_Af0GhuR8JSrb, user: teneille.nel@gmail.com, time: 1794832777608, content64: 'Qm9pdG8gZXQgYWwgMjAyNg==', responses: [], resolved: false ###>`ref`</### comment id: hTGwA49I_Af0GhuR8JSrb ###>`. 
 
-\subsection{Statistical analyses}
-\label{subsec:statistics}
+\subsubsection{Sequential cation extractions}
 
-Describe the statistical analyses and models.
+Sequential chemical extractions were performed on soil samples in triplicate following the modified Tessier procedure \citep{Tessier1979}, as described by Steinwidder et al. (2025). The procedure sequentially targeted exchangeable, carbonate-bound, reducible (Fe/Mn (hydr)oxides), and oxidizable (organic matter-associated) elemental fractions using increasingly aggressive extractants. Following each extraction step, samples were centrifuged (8 min at 4500 rpm) and the supernatant was filtered (0.45 $\mu$m) for quantitative analysis. The remaining soil residues were washed with distilled water before proceeding to the next extraction step. To account for residual water entrained in the soil pellets following washing, each centrifuge tube was weighed manually after discarding the supernatant. The mass difference was used to estimate the volume of entrained water, assuming a water density of 1 g mL\(^{-1}\), to correct for dilution of the extractant in the following extraction step. 
 
-% Example mathematical equation
+\subsubsection{Metal oxide phases}
+
+Dithionite-citrate-bicarbonate (DCB) and acid oxalate extractions were performed on  soil samples in triplicate to quantify pedogenic Fe, Al, Mn and Si associated with crystalline and non-crystalline soil oxide phases, respectively.
+Crystalline (DCB-extractable) oxide-associated elements were extracted following the \citet{Mehra1958} procedure at the Laboratory for Mineralogy and Petrology, Ghent University. Briefly, soil was treated with a sodium citrate-bicarbonate buffer and sodium dithionite as a reducing agent. The extraction was performed at 75 $\deg$ C, with repeated additions of sodium dithionite to promote the dissolution of free iron oxides and associated compounds. Following the addition of saturated potassium chloride, the suspension was centrifuged and the supernatant collected. The extraction was repeated, and the combined supernatants were brought to a known final volume for elemental analysis. 
+Non-crystalline (oxalate-extractable) oxide-associated elements in soil samples were measured in triplicate using an acid oxalate extraction. For this procedure, 0.7 g of soil was combined with 35 mL of 0.2 M oxalate extractant (pH 3) and shaken for 2 h in the dark to minimise light-induced reactions. Samples were subsequently centrifuged, and the supernatants filtered through 0.45 $\mu$m filters. Concentrations of Fe, Al, Mn and Si in the oxalate extracts were determined by ICP-OES.
+
+\subsubsection{Aggregate stability}
+
+Aggregate stability was assessed using wet sieving to investigate the contributions of mineral-associated cementing agents to soil aggregation. Aggregate stability was determined by wet sieving, following established procedures \citep{KemperRosenau2018}. To distinguish the contribution of poorly crystalline Fe and Al phases from the combined effects of water-soluble and readily dispersible constituents, a subset of samples was subjected to an oxalate extraction prior to wet sieving. Oxalate-extractable Fe and Al phases were operationally targeted using 0.2 M ammonium oxalate at pH 3 in the dark, which preferentially dissolves short-range-order and poorly crystalline Fe and Al oxides. Aggregate stability following this treatment was compared with that of untreated water-sieved samples to evaluate the contribution of oxalate-soluble cementing agents to aggregate stability.
+
+Bulk soil samples were collected using Kopecky rings to minimise disturbance to the soil structure. A subsample of air-dried soil was weighed before and after oven-drying at (105 $\deg$ C) to determine gravimetric moisture content and correct subsequent measurements to an oven-dry soil mass basis. A separate 150-g subsample of air-dried soil was divided into five 30-g subsamples using a soil splitter to obtain representative and comparable aggregate-size distributions among replicate measurements. The subsamples were subjected to identical wet-sieving procedures, differing only in the pretreatment applied. For the oxalate treatment, soil was soaked overnight in 0.2 M ammonium oxalate solution (pH 3) at a soil-to-solution ratio of 1:10, in the dark and without shaking. The corresponding untreated samples were soaked in distilled water under otherwise identical conditions.
+
+Following pretreatment, the extractant was decanted, and the soil was centrifuged before the supernatant was removed. The remaining material was subsequently subjected to wet sieving using distilled water. Aggregates were separated into four size fractions: (>2) mm, 0.25--2 mm, 0.063--0.25 mm and (<0.063) mm. The fractions were rinsed with distilled water until the wash water ran clear, oven-dried at 105 $\deg$ C and weighed to determine the mass distribution among aggregate-size classes.
+
+Aggregate stability was quantified using the mean weight diameter (MWD) of water-stable aggregates, calculated as the sum of the representative diameter of each aggregate-size fraction weighted by its proportion of the total recovered sample mass \citep{Abiven2009,KemperRosenau2018,Franzluebbers2022,Jimenez2025}:
+
 \begin{equation}
-    SOC_{\mathrm{stock}} =
-    C_{\mathrm{total}} \times
-    \rho_{\mathrm{b}} \times
-    z \times
-    A
-    \label{eq:soc_stock}
+    \mathrm{MWD} =
+    \sum_{i=1}^{n} x_i w_i
+    \label{eq:mwd}
+\end{equation}
+  
+where ($x_i$) represents the representative diameter (mm) of aggregate-size fraction (i), ($w_i$) represents the proportion of the total recovered sample mass in that fraction, and (n) is the number of aggregate-size fractions. The mass proportion of each fraction was calculated as:
+  
+\begin{equation}
+    w_i =
+    \frac{M_i}{\sum_{i=1}^{n} M_i}
+    \label{eq:mass_proportion}
 \end{equation}
 
-where $C_{\mathrm{total}}$ is the soil carbon concentration,
-$\rho_{\mathrm{b}}$ is bulk density, $z$ is soil depth,
-and $A$ is the area conversion factor.
-```latex
+where ($M_i$) is the oven-dry mass (g) of fraction (i). Representative aggregate diameters were assigned using the midpoint of the corresponding sieve interval. The representative diameters used were 3 mm for the (>2) mm fraction (assuming an upper aggregate-size boundary of 8 mm), 1.125 mm for the 0.25--2 mm fraction, 0.1565 mm for the 0.063--0.25 mm fraction and 0.0315 mm for the (<0.063) mm fraction. This midpoint-based approach allowed the calculation of MWD across the full range of measured aggregate sizes, including the open-ended largest and smallest fractions \citep{Franzluebbers2022,Jimenez2025}.
+
+\subsubsection{ATR-FTIR analyses}
+
+Attenuated total reflectance Fourier-transform infrared (ATR-FTIR) spectroscopy was used to investigate changes in SOM functional groups following the removal of exchangeable base cations, providing insight into potential cation-mediated organo-mineral associations. For each soil sample, three replicate aliquots of approximately 3 g ($\pm 0.05$ g) were weighed into separate 50 mL centrifuge tubes. Exchangeable cations were extracted using 1 M ammonium acetate (pH = 7). A volume of 18 mL of extractant was added to each soil aliquot, followed by shaking at 450 rpm for 2 h. Samples were subsequently centrifuged at 4500 rpm for 15 min, after which the supernatant was discarded while retaining the soil residue. The residues were washed with 30 mL of distilled water, shaken at 450 rpm for 30 min and centrifuged again at 4500 rpm for 15 min to remove residual extractant. The resulting supernatants were discarded, and the soil residues were frozen overnight before being freeze-dried.
+
+ATR-FTIR spectra were acquired from the untreated soils and corresponding NH$_4$OAc-extracted residues to evaluate changes in organic functional groups following cation extraction. Spectra were recorded in absorbance mode over a wavenumber range of 400--4000 cm$^{-1}$, using 64 scans per measurement and a spectral resolution of 4 cm$^{-1}$. Spectral measurements were exported as individual data files for subsequent processing and comparison of the untreated soils and extracted residues.  
+
+\subsubsection{Density fractionation and radiocarbon analysis}
+Soil organic matter was physically separated into three distinct density fractions - fPOM, oPOM and MAOM - using sequential density fractionation with sodium polytungstate (SPT; $\text{Na}_6[\text{H}_2\text{W}_{12}\text{O}_{40}]$, TC-Tungsten) adapted from established protocols \citep{Gaudinski2000, Crow2007}. To prevent modern carbon contamination prior to subsequent radiocarbon analysis, all glassware was pre-baked at 500 $\deg$ C, non-bakeable equipment was rinsed with acetone, and double-deionized water was used throughout the procedure.
+
+Approximately 10 g of sieved soil (<)2 mm was gently added without stirring to $128\,\text{g}$ ($80\,\text{mL}$) of freshly prepared SPT solution adjusted to a target density of $1.60\text{--}1.62\,\text{g}\,\text{cm}^{-3}$ in a $250\,\text{mL}$ glass centrifuge tube. Samples were agitated on a horizontal shaker for $10\,\text{min}$ and centrifuged at $2889 \times g$ ($3500\,\text{rpm}$) for $30\,\text{min}$. The floating fPOM fraction was aspirated using a glass pipette—keeping the tip at least $0.5\text{--}1.0\,\text{cm}$ above the settled mineral pellet—and collected via vacuum filtration onto pre-weighed glass microfiber filters ($1.6\,\mu\text{m}$ pore size, Sartorius MGA). Reclaimed SPT solution was used to resuspend the pellet, and the shaking, centrifugation, and aspiration steps were repeated two to three times until no floating organic material remained.
+
+Following fPOM removal, the remaining soil pellet was resuspended in fresh SPT solution ($1.60\text{--}1.62\,\text{g}\,\text{cm}^{-3}$) to the initial volume mark. To disrupt soil aggregates and release occluded organic matter, samples were dispersed using a calibrated ultrasonic disruptor horn immersed $1.0\text{--}1.5\,\text{cm}$ into the suspension at an energy input of $450\,\text{J}\,\text{mL}^{-1}$ \citep{Crow2007, Guggenberger2013}. During sonication, centrifuge tubes were kept in an ice-water cooling bath to prevent thermal alteration of organic matter. After rinsing particles adhering to the ultrasonic probe back into the tube with SPT, samples were centrifuged at $2889 \times g$ for $30\,\text{min}$, and the released oPOM was collected onto a fresh glass microfiber filter via vacuum filtration, repeating the extraction two to three times as described for fPOM.
+
+Both the isolated fPOM and oPOM fractions were thoroughly rinsed on their respective filters with DDI water to remove residual SPT, transferred into pre-weighed round-bottom flasks and freeze-dried for at least 24 h. The remaining mineral-associated heavy fraction (HF) pellet was resuspended in DDI water and washed via repeated centrifugation ($2889 \times g$, $20\,\text{min}$) until the supernatant was clear. When clay dispersion occurred during washing, a few drops of MgCl$_2$ were added to induce flocculation and prevent clay loss. Finally, the washed HF was transferred to a pre-weighed round-bottom flask and freeze-dried for at least 24 h prior to gravimetric mass balance determination and subsequent carbon and isotopic analyses.
+
+Freeze-dried density fractions (fPOM, oPOM, and MAOM) and corresponding bulk soil samples were prepared for radiocarbon ($^{14}\text{C}$) analysis following the standard protocols of the radiocarbon laboratory at the Max Planck Institute for Biogeochemistry (Jena, Germany) \citep{Steinhof2017}. Prior to combustion and graphitization, samples were acidified with $1\,\text{M}\,\text{HCl}$ to remove inorganic carbonates, agitated on a shaker (MixMate, Eppendorf, Wesseling-Berzdorf, Germany), and dried at $60\,^{\circ}\text{C}$ using a rotational vacuum concentrator (Martin Christ GmbH, Osterode, Germany) \citep{Steinhof2017}. Subsequently, decalcified samples were weighed into tin capsules, combusted to $\text{CO}_2$ in an elemental analyzer, and graphitized via catalytic reduction with $\text{H}_2$ over an iron ($\text{Fe}$) catalyst \citep{Steinhof2017}. The $^{14}\text{C}$ abundance of the resulting graphite targets was measured using a Mini Carbon Dating System accelerator mass spectrometer (MICADAS, Ionplus, Dietikon, Switzerland) \citep{Steinhof2017}. Procedural backgrounds arising from combustion, graphitization, and AMS measurement were corrected using appropriate $^{14}\text{C}$-free and modern reference standards \citep{Steinhof2017}.
+
+Radiocarbon data are expressed as Fraction Modern ($\text{F}^{14}\text{C}$), representing the $^{14}\text{C}/^{12}\text{C}$ ratio of the sample ($A_{\text{s}}$) normalized to $0.95$ times the measured ratio of the Oxalic Acid I standard ($A_{\text{OX1}}$) and corrected for mass-dependent isotopic fractionation to a common $\delta^{13}\text{C}$ value of $-25\,\text{\textperthousand}$ \citep{Stuiver1977, Trumbore2009}:
+
+\begin{equation}
+\text{F}^{14}\text{C} = \left( \frac{A_{\text{s}}}{0.95 \cdot A_{\text{OX1}}} \right) \times \left( \frac{0.975}{0.981} \right) \times \left( \frac{1 + \frac{\delta^{13}\text{C}_{\text{OX1}}}{1000}}{1 + \frac{\delta^{13}\text{C}_{\text{s}}}{1000}} \right)
+\end{equation}
+
+where $\delta^{13}\text{C}$ denotes the relative deviation of the $^{13}\text{C}/^{12}\text{C}$ ratio from the Vienna Pee Dee Belemnite (VPDB) standard in per mil ($\text{\textperthousand}$) \citep{Stuiver1977}:
+
+\begin{equation}
+\delta^{13}\text{C} = \left( \frac{\left(^{13}\text{C}/^{12}\text{C}\right)_{\text{s}}}{\left(^{13}\text{C}/^{12}\text{C}\right)_{\text{ref}}} - 1 \right) \times 1000
+\end{equation}
+
+To account for radioactive decay of the Oxalic Acid I standard between $1950$ and the year of sample measurement ($y$), radiocarbon values are further reported as $\Delta^{14}\text{C}$ ($\text{\textperthousand}$) \citep{Trumbore2016}:
+
+\begin{equation}
+\Delta^{14}\text{C} = \left( \frac{\text{F}^{14}\text{C}}{e^{(y - 1950)/8267}} - 1 \right) \times 1000
+\end{equation}
+
+where $1/8267\,\text{yr}^{-1}$ is the true decay constant of $^{14}\text{C}$ \citep{Trumbore2016}.
+
+\subsection{Data processing and statistical analyses}
+\label{subsec:statistics}
+All data processing and calculations were performed in R version 4.5.1.
+  
+\subsubsection{Metal oxide phase ratios}
+The FeDCB/Fe total ratio relates total pedogenetically transformed Fe phases extracted with DCB, to total Fe, a value which increases with soil development as more crystalline oxide forms \citep{maier2025parent}.
+
+\subsubsection{Aggregate stability indices}
+
+The mean weight diameter (MWD) was calculated by multiplying the proportion of aggregates in each size class by the midpoint diameter of that class and summing across size classes. The geometric mean diameter (GMD) was calculated using a logarithmic weighting of the aggregate size classes. The fractal dimension (D) was calculated from the slope of the relationship between log cumulative aggregate mass and log normalized sieve diameter. The H$_2$O extract represents the baseline aggregate stability measurement. Comparisons of MWD, GMD and D between treatments under H$_2$O extraction were used to assess treatment effects on aggregate stability. Oxalate:H$_2$O ratios were calculated for MWD, GMD and D to express the aggregate stability index following oxalate extraction relative to the H$_2$O baseline.
+
+\subsubsection{ATR-FTIR spectral data processing}
+ATR-FTIR spectra were processed in R. Individual spectra were imported and associated with their respective soil sample identifiers and replicate measurements. Baseline correction was performed using the asymmetric least squares (ALS) algorithm implemented in the \texttt{baseline} package. Following baseline correction, spectra were restricted to the 800--3000 cm$^{-1}$ region to focus on the principal organic functional group absorption bands and relevant mineral-associated vibrations. Each spectrum was subsequently vector-normalised using its Euclidean (L2) norm to account for differences in overall spectral intensity and facilitate comparison of relative band contributions between samples. Normalisation was performed as:
+
+\begin{equation}
+A_{\mathrm{norm},i} =
+\frac{A_{\mathrm{corr},i}}
+{\sqrt{\displaystyle\sum_{j=1}^{n} A_{\mathrm{corr},j}^{2}}}
+\label{eq:ftir_vector_normalisation}
+\end{equation}
+
+where $A_{\mathrm{norm},i}$ and $A_{\mathrm{corr},i}$ represent the normalised and baseline-corrected absorbance at wavenumber $i$, respectively, and $n$ represents the total number of spectral observations within the selected wavenumber range.
+
+Integrated spectral band areas were calculated for predefined wavenumber intervals associated with SOM functional groups and mineral components (Table~\ref{tab:ftir_bands}). Integration was performed using the trapezoidal numerical integration method, implemented in the \texttt{pracma} package in R. The integrated area for each spectral interval was calculated as:
+
+\begin{equation}
+A_{\mathrm{band}} =
+\int_{\nu_1}^{\nu_2}
+A_{\mathrm{norm}}(\nu),d\nu
+\label{eq:ftir_band_integration}
+\end{equation}
+
+where $A_{\mathrm{norm}}(\nu)$ represents the vector-normalised absorbance at wavenumber $\nu$, and $\nu_1$ and $\nu_2$ represent the lower and upper boundaries of the respective spectral interval. The integration intervals included symmetric and asymmetric carboxylate stretching (1380--1425 and 1580--1650 cm$^{-1}$, respectively), aliphatic C--H stretching (2839--2870 and 2898--2976 cm$^{-1}$), aromatic C=C stretching (1500--1550 cm$^{-1}$), and the broader carbonyl-associated region (1570--1710 cm$^{-1}$). Additional integrations were performed for silicate (1000--1120 cm$^{-1}$), poorly crystalline silicate (950--1050 cm$^{-1}$), carbonate bending (870--880 cm$^{-1}$), carbonate stretching (1415--1480 cm$^{-1}$) and polysaccharide-associated vibrations (1030--1080 cm$^{-1}$).
+
+For each soil sample, integrated band areas were averaged across the three replicate measurements. Combined indicators were calculated by summing the integrated areas of the two aliphatic C--H intervals to obtain total aliphatic absorbance, and the symmetric and asymmetric carboxylate intervals to obtain total carboxylate absorbance. Changes in four principal functional-group indicators (total carboxylate, carbonyl-associated, aromatic and total aliphatic absorbance) were subsequently evaluated between untreated soils and NH$_4$OAc-extracted residues.
+
+Extraction-induced changes were expressed as percentage differences relative to the corresponding untreated soil:
+
+\begin{equation}
+\Delta A_{\mathrm{band}} (%) =
+\frac{
+A_{\mathrm{band,after}} -
+A_{\mathrm{band,before}}
+}{
+A_{\mathrm{band,before}}
+}
+\times 100
+\label{eq:ftir_percentage_change}
+\end{equation}
+
+where $A_{\mathrm{band,before}}$ and $A_{\mathrm{band,after}}$ represent the mean integrated band areas of the untreated soil and NH$_4$OAc-extracted residue, respectively. Negative values indicated a decrease in the relative contribution of a functional-group-associated spectral region following extraction, whereas positive values indicated an increase. 
+
+\subsubsection{Soil organic matter compartmental modelling}
+
+To quantify carbon turnover rates, transfer efficiencies, and age distributions across SOM pools for each treatment (Control, Bolsdorfer, Lime, H\"{u}hnerberg, and Eifelgold), we fitted a three-pool sequential compartmental model with first-order linear kinetics using the \texttt{SoilR} package \citep{Sierra2012, Sierra2014} in \texttt{R} \citep{RCoreTeam2025}. The three modeled pools corresponded directly to the isolated physical fractions: fPOM, oPOM and MAOM.
+
+The temporal evolution of carbon stocks $\mathbf{C}(t) = [C_{\text{fPOM}}(t),\, C_{\text{oPOM}}(t),\, C_{\text{MAOM}}(t)]^{\top}$ ($\text{g\,C\,m}^{-2}$) and their radiocarbon signatures from $2023$ to $2026$ (evaluated at monthly time steps, $\Delta t = 1/12\,\text{yr}$) was governed by the linear autonomous system:
+
+\begin{equation}
+\frac{d\mathbf{C}(t)}{dt} = \mathbf{I} + \mathbf{A}\mathbf{C}(t)
+\end{equation}
+
+where $\mathbf{I} = [I_0,\, 0,\, 0]^{\top}$ represents annual plant carbon inputs entering exclusively into the $\text{fPOM}$ pool ($I_0 = 100\,\text{g\,C\,m}^{-2}\,\text{yr}^{-1}$), and $\mathbf{A}$ is the compartmental transfer matrix:
+
+\begin{equation}
+\mathbf{A} = \begin{pmatrix}
+-k_{\text{f}} & 0 & 0 \\
+\alpha_{21} k_{\text{f}} & -k_{\text{i}} & 0 \\
+0 & \alpha_{32} k_{\text{i}} & -k_{\text{s}}
+\end{pmatrix}
+\end{equation}
+
+Here, $k_{\text{f}}$, $k_{\text{i}}$, and $k_{\text{s}}$ ($\text{yr}^{-1}$) denote the decomposition rate constants of the $\text{fPOM}$, $\text{oPOM}$, and $\text{MAOM}$ pools, respectively, while $\alpha_{21}$ and $\alpha_{32}$ represent the dimensionless transfer coefficients governing carbon fluxes from $\text{fPOM}$ to $\text{oPOM}$ and from $\text{oPOM}$ to $\text{MAOM}$, respectively.
+
+Initial pool sizes $\mathbf{C}(2023)$ and initial radiocarbon signatures $\Delta^{14}\text{C}(2023)$ were parameterized using the shared $2023$ baseline observations across all plots, paired with treatment-specific bulk densities for subsequent sampling years. Atmospheric $\Delta^{14}\text{C}$ forcing for Northern Hemisphere Zone 1 was constructed by combining the empirical compilation of \citet{Hua2022} with projected atmospheric $\Delta^{14}\text{C}$ values for $2020\text{--}2026$.
+
+Model parameter estimation was performed independently for each treatment using the \texttt{FME} package \citep{Soetaert2010}. First, optimal starting parameters were obtained via Nelder--Mead simplex optimization (\texttt{modFit}) by minimizing the weighted sum of squared residuals across eight observational data streams: carbon stocks ($\text{g\,C\,m}^{-2}$) and $\Delta^{14}\text{C}$ ($\text{\textperthousand}$) for bulk soil, $\text{fPOM}$, $\text{oPOM}$, and $\text{MAOM}$, each weighted by its respective empirical standard deviation (with missing or zero standard deviations imputed using the median observed standard deviation for that variable). Parameter bounds were constrained to $k_{\text{f}} \in [0.05, 1.5]\,\text{yr}^{-1}$, $k_{\text{i}} \in [0.005, 0.5]\,\text{yr}^{-1}$, $k_{\text{s}} \in [0.0001, 0.05]\,\text{yr}^{-1}$, $\alpha_{21} \in [0, 0.5]$, and $\alpha_{32} \in [0, 0.1]$.
+
+To quantify parameter and predictive uncertainty, Markov Chain Monte Carlo (MCMC) sampling was conducted using the adaptive Metropolis algorithm (\texttt{modMCMC}) initialized at the Nelder--Mead optimum, running for $50{,}000$ iterations with covariance matrix adaptation every $1{,}000$ iterations \citep{Soetaert2010}. Posterior predictive $95\%$ credible intervals for pool carbon stocks and $\Delta^{14}\text{C}$ trajectories were derived from $500$ random draws from the posterior parameter chains.
+
+Following parameter calibration, probability density functions of system age (the age of carbon stored within individual pools and the bulk soil) and transit time (the time elapsed between carbon entry into $\text{fPOM}$ and its respiratory loss from the soil system) were computed over a $0\text{--}500\,\text{yr}$ horizon using the \texttt{systemAge} and \texttt{transitTime} functions in \texttt{SoilR} \citep{Sierra2017, Sierra2018}. Uncertainty envelopes ($95\%$ credible intervals) and summary metrics (mean and median ages and transit times) were derived from $700$ posterior parameter sets sampled after discarding the initial $20{,}000$ MCMC iterations as burn-in.
+
+\subsubsection{Integrated statistical models}
+The difference in soil geochemical responses between treatments and control plots were evaluated by fitting separate Bayesian regression models for each  response variable (aggregate stability indices, extractable cation ratios, soil physicochemical properties, and FTIR spectral shifts) using Stan via the cmdstanr package in R. Treatment-specific location parameters were estimated using a Student-t likelihood (with four degrees of freedom), with standardized response variables modelled as a function of treatment. Regularizing normal priors (μ ~ Normal(0, 1)) were assigned to treatment-specific parameters, while a half-Student-t prior was used for the residual standard deviation. Posterior distributions were estimated using four Markov chain Monte Carlo chains, with 2000 warm-up and 2000 sampling iterations per chain. Treatment effects were evaluated through posterior contrasts, calculated as differences between treatment-specific posterior estimates. Primary contrasts compared each amendment treatment (lime, Hühnerberg, Eifelgold and Bolsdorfer at 50 t ha$^{-1}$) against the untreated control. Posterior median differences and 95\% credible intervals were calculated in both standardized and original measurement units. The posterior probability of a positive or negative treatment effect was determined as the proportion of posterior draws in which the corresponding treatment-control contrast was greater or less than zero, respectively. 
+
+Associations between soil geochemical parameters and SoilR-derived decomposition rates, transfer coefficients, pool ages, and system transit time were investigated by performing correlation analyses across the treatment-level observations. Correlations were calculated using posterior draws to propagate uncertainty in the fitted SoilR parameters and derived persistence metrics. Spearman correlation coefficients were summarised using their posterior means, medians, standard deviations, and 95\% uncertainty intervals. 
+
+To identify the primary geochemical and spectroscopic drivers of soil organic carbon concentrations and $\Delta^{14}\text{C}$ across bulk soil and isolated density fractions ($\text{MAOM}$, $\text{oPOM}$, and $\text{fPOM}$), we fitted eight separate regularized Bayesian Gaussian multiple linear regression models using \texttt{cmdstanr} \citep{Carpenter2017, Gabry2025}. Candidate predictors were filtered to retain variables with $\ge 70\%$ completeness, median-imputed, and pruned to reduce severe multicollinearity ($|r| > 0.95$). Both predictors and response variables were standardized ($z$-scored) prior to fitting.
+
+Each reference model was specified in Stan with weakly informative priors ($\alpha \sim \mathcal{N}(0, 1)$, $\beta_j \sim \mathcal{N}(0, 0.5)$, and $\sigma \sim \text{Exponential}(1)$) and sampled using four Hamiltonian Monte Carlo chains ($1{,}500$ warmup and $2{,}000$ sampling iterations per chain). Parsimonious submodels were then selected via Bayesian projection predictive variable selection in the \texttt{projpred} package \citep{Piironen2020, Catalina2022}, applying forward selection (up to $10$ terms) evaluated by Pareto-smoothed importance sampling leave-one-out cross-validation (PSIS-LOO) \citep{Vehtari2017}. Using the one-standard-error parsimony criterion ($\alpha = 0.32$), we retained the smallest submodel whose expected log predictive density (ELPD) remained within one standard error of the full reference model, and refitted each selected model in Stan to obtain final posterior parameter estimates and relative predictor importance.
+
 \section{Results}
 \label{sec:results}
 
@@ -322,9 +473,10 @@ and $A$ is the area conversion factor.
 
 \end{itemize}
 
+`<### comment id: KEj0qE1-9EEOOYM2JkNbr, user: teneille.nel@gmail.com, time: 1794845316479, content64: 'bmVlZHMgdG8gZmluZCBhIHBsYWNl', responses: [], resolved: false ###>`Posterior`</### comment id: KEj0qE1-9EEOOYM2JkNbr ###>` coefficient summaries (mean, median, standard deviation, and 95\% credible intervals) are used to evaluate the direction, magnitude, and uncertainty of predictor associations and to assess proposed carbon stabilisation mechanisms. Because predictors are standardised, coefficients represent the expected change in the response, in its original units, associated with a one-standard-deviation increase in a predictor, conditional on the other predictors. Credible intervals that exclude zero and high posterior probabilities of a positive (Pr_positive) or negative (Pr_negative) coefficient indicate stronger evidence for an association in the corresponding direction, whereas intervals spanning zero indicate greater uncertainty in the direction of the effect. These associations should be interpreted as conditional relationships rather than causal effects. Relative predictor importance is calculated from the absolute posterior mean standardised coefficients. Each predictor’s absolute coefficient is expressed as a percentage of the sum of the absolute coefficients of all five predictors in the corresponding model. These percentages describe the relative magnitude of the fitted standardised associations within each model.
 
-Bulk SOC changes are difficult to detect especially at lower sampling density due to soil heterogeneity \citep{Poeplau2022,steinwidder2025beyond}.
-```
+`<### comment id: VYUKTh82xlzLtBFLTurn1, user: teneille.nel@gmail.com, time: 1794845324255, content64: 'bmVlZHMgdG8gZmluZCBhIHBsYWNl', responses: [], resolved: false ###>`Bulk`</### comment id: VYUKTh82xlzLtBFLTurn1 ###>` SOC changes are difficult to detect especially at lower sampling density due to soil heterogeneity \citep{Poeplau2022,steinwidder2025beyond}.
+
 
 \section{Discussion}
 \label{sec:discussion}
@@ -341,6 +493,8 @@ Both basalt amendments increased CEC and exchangeable Ca, while Mg availability 
 The sequential extraction results further indicate that the amendments supplied or mobilized elements across different geochemical pools. K, Mg and Ca were associated with exchangeable fractions, while Mg, K, Fe, Al, Si and Mn were also recovered in reducible fractions. The presence of Na and K in the carbonate-associated fraction of Bolsdorfer-amended soils suggests that carbonate phases may additionally act as sinks for released alkaline elements. However, the distribution of these elements among operationally defined extraction fractions should not be interpreted as direct evidence of specific mineral phases or binding mechanisms.
 
 Differences in oxalate- and DCB-extractable elements provide further evidence of mineralogy-dependent weathering trajectories. Bolsdorfer exhibited relatively high oxalate-extractable Si compared with DCB-extractable Si, potentially indicating the accumulation of poorly crystalline or short-range-order Si-bearing phases. Conversely, the relatively high DCB-Fe compared with oxalate-Fe across treatments may indicate the presence of more crystalline or strongly bound Fe-bearing phases. Under Hühnerberg, decreasing oxalate-extractable Al and Mn with increasing application rate suggests redistribution from readily extractable pools into less oxalate-soluble forms, potentially through mineral transformation, crystallization or incorporation into other soil phases. These observations are relevant because the capacity of secondary minerals to stabilize SOM depends not only on their abundance, but also on their surface properties, crystallinity and persistence under prevailing soil conditions.
+
+Traditionally, sesquioxides have been considered important stabilising agents at the microaggregate scale (<0.53 $\mu$m), primarily through cation bridging and organo-mineral complexation, whereas soil organic matter (SOM), including polysaccharides, fungal hyphae and plant roots, contributes to aggregate stabilisation across a broader range of aggregate sizes \citep{TisdallOades1982}. However, sesquioxides have also been shown to contribute to macroaggregate stabilisation, particularly in highly weathered soils such as Ultisols \citep{Barthes2008,Peng2015}.
 
 The effects of the amendments on soil aggregation also differed. Hühnerberg treatments exhibited greater aggregate stability relative to the control, suggesting that this amendment may promote physical protection of SOM through aggregate formation and occlusion. This response may be related to the release of polyvalent cations, changes in surface charge, or the formation of new mineral associations. However, the simultaneous decrease in oxalate-extractable Al and Mn means that the increased aggregate stability cannot be attributed unequivocally to the accumulation of poorly crystalline metal oxides. Rather, several interacting geochemical and physical processes may contribute to aggregate stabilization.
 
@@ -524,6 +678,149 @@ have appeared to influence the work reported in this paper.
 
 The data supporting the findings of this study are available
 from the corresponding author upon reasonable request.
+
+\newpage
+\section*{Tables}
+
+\begin{landscape}
+\begin{table}[p]
+\centering
+\caption{Rock type, mining locations, application rates and dominant mineralogical components of the soil amendments. Mineral abundances are expressed as wt\% determined by XRD analysis.}
+\label{tab:amendment_origins}
+\small
+
+\begin{tabular}{
+>{\raggedright\arraybackslash}p{4.0cm}
+>{\raggedright\arraybackslash}p{4.5cm}
+>{\raggedright\arraybackslash}p{4.5cm}
+>{\raggedright\arraybackslash}p{4.5cm}
+>{\raggedright\arraybackslash}p{3.0cm}
+}
+\hline
+\textbf{Characteristic}
+& \textbf{Bolsdorfer}
+& \textbf{Eifelgold}
+& \textbf{H\"uhnerberg}
+& \textbf{Lime} \\
+\hline
+
+Rock type
+& Basalt
+& Tephrite
+& Basalt
+& Agricultural lime \\
+
+Application rate (t ha$^{-1}$)
+& 50
+& 50
+& 50
+& 2 \\
+
+Mining location (GPS)
+& \makecell[l]{50$^{\circ}$16$^{\prime}$34.4$^{\prime\prime}$N\\
+6$^{\circ}$40$^{\prime}$28.7$^{\prime\prime}$E}
+& \makecell[l]{50$^{\circ}$26$^{\prime}$23.7$^{\prime\prime}$N\\
+7$^{\circ}$16$^{\prime}$44.7$^{\prime\prime}$E}
+& \makecell[l]{50$^{\circ}$42$^{\prime}$28.1$^{\prime\prime}$N\\
+7$^{\circ}$20$^{\prime}$13.2$^{\prime\prime}$E}
+& -- \\
+
+\hline
+\textbf{Dominant minerals (top five; wt\%)}
+&
+Diopside (45\%) \par
+Nepheline (31\%) \par
+Magnetite (7.5\%) \par
+\AA kermanite (6.5\%) \par
+Fluorapatite (4.5\%)
+&
+Diopside (41.5\%) \par
+Plagioclase (14.5\%) \par
+Leucite (12\%) \par
+Nepheline (10.5\%) \par
+Muscovite (6.5\%)
+&
+2:1 layer silicates (27.5\%) \par
+Plagioclase (26.5\%) \par
+Diopside (23\%) \par
+Forsterite (6.5\%) \par
+Magnetite (5.5\%)
+&
+CaCO$_3$ \\
+
+\hline
+\end{tabular}
+\end{table}
+\end{landscape}
+
+\newpage
+
+\begin{table}[htbp]
+\centering
+\caption{Spectral intervals used for integration of ATR-FTIR absorbance bands and their associated functional-group or mineral assignments.}
+\label{tab:ftir_bands}
+\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{p{3.1cm}p{2.4cm}X}
+\hline
+\textbf{Spectral indicator} &
+\textbf{Wavenumber (cm$^{-1}$)} &
+\textbf{Interpretation} \\
+\hline
+
+COO$^{-}$ symmetric stretch &
+1380--1425 &
+Carboxylate functional groups potentially involved in polyvalent cation bridging and organo-mineral interactions. \\
+
+COO$^{-}$ asymmetric stretch &
+1580--1650 &
+Carboxylate groups associated with metal complexation and interactions with mineral surfaces. \\
+
+Silicate Si--O stretching &
+1000--1120 &
+Silicate mineral structures, including primary and secondary silicate phases. \\
+
+Poorly crystalline silicate &
+950--1050 &
+Spectral contributions potentially associated with poorly ordered silicate phases and secondary weathering products. \\
+
+Carbonate bending &
+870--880 &
+Carbonate-associated vibrations, particularly from calcite and dolomite. \\
+
+Carbonate stretching &
+1415--1480 &
+Carbonate mineral-associated vibrations relevant to mineral carbonation and inorganic carbon storage. \\
+
+Aliphatic C--H asymmetric stretch &
+2898--2976 &
+Aliphatic organic structures associated with lipids, waxes and relatively fresh plant-derived organic matter (S-POM). \\
+
+Aliphatic C--H symmetric stretch &
+2839--2870 &
+Aliphatic organic structures associated with lipid- and wax-derived compounds. \\
+
+Aromatic C=C stretching &
+1500--1550 &
+Aromatic structures associated with lignin-derived and more complex plant-derived organic matter (C-POM). \\
+
+Carbonyl-associated region &
+1570--1710 &
+Overlapping contributions from carbonyl, quinone, ketone, amide and carboxylate-associated vibrations, potentially including microbially processed organic matter (MOM). \\
+
+Polysaccharide-associated C--O stretching &
+1030--1080 &
+Carbohydrate-associated vibrations, including contributions from plant- and microbial-derived polysaccharides. \\
+
+\hline
+\end{tabularx}
+\end{table}
+
+\newpage
+
+\section{Figures}
+
+Predictors are displayed only where the absolute median Spearman rho $\geq$ 0.5.
 
 % -----------------------------------------------------------------------------
 % 10. REFERENCES
