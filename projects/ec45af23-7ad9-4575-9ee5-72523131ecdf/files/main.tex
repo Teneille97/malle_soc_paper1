@@ -48,6 +48,11 @@
 
 \usepackage[nameinlink,noabbrev]{cleveref}
 
+% Supplementary
+\usepackage{hyperref}
+\usepackage{xr}
+\externaldocument[SI-]{supplementary}
+\usepackage[nameinlink,noabbrev]{cleveref}
 % -----------------------------------------------------------------------------
 % 2. JOURNAL AND BIBLIOGRAPHY SETTINGS
 % -----------------------------------------------------------------------------
@@ -68,8 +73,7 @@
 \begin{document}
 \begin{frontmatter}
 
-\title{Mineralogy-dependent silicate weathering drives divergent pathways of soil organic carbon accumulation and persistence 
-}
+\title{Mineralogy-dependent effects of silicate amendments on soil organic carbon allocation and persistence}
 
 \author[aff1]{Teneille Nel\corref{cor1}}
 \ead{first.author@email.com}
@@ -99,10 +103,13 @@
 
 \cortext[cor1]{Corresponding author}
 
+
 \begin{abstract}
 
-Enhanced rock weathering (ERW) using crushed silicate amendments is increasingly deployed to sequester atmospheric $\text{CO}_2$, yet its secondary impacts on existing soil organic carbon (SOC) dynamics remain poorly constrained. While mineral dissolution alters soil pH, base cation availability, and reactive mineral surfaces, how specific rock mineralogies govern the balance between new carbon stabilization and legacy organic matter turnover is unclear. We hypothesized that silicate rock amendments drive divergent carbon allocation between mineral-associated organic matter (MAOM) and occluded particulate organic matter (oPOM) via mineralogy-dependent cation release and secondary mineral formation, ultimately dictating bulk SOC persistence. To test this, we combined geochemical measurements, density fractionation, Fourier-transform infrared (FTIR) spectroscopy, and radiocarbon ($\Delta^{14}\text{C}$) measurements with compartmental turnover modeling (SoilR) across plots amended with lime and three distinct silicate rocks: Eifelgold (soluble, Si- and micronutrient-rich), Hühnerberg (slower-weathering, Ca/Mg/K-rich basalt), and Bolsdorfer (continuously weathering, Na/Fe-rich basalt). Three years post-application, all mineral amendments increased system-level soil carbon transit time relative to the unamended control, following the hierarchy: $\text{Eifelgold} > \text{Lime} > \text{Hühnerberg} > \text{Bolsdorfer} > \text{Control}$. Across all rock treatments, oPOM decomposition rates decreased, driven by weathering-derived cation release, secondary mineral phases, and enhanced aggregate stability that physically and chemically protected occluded carbon. However, MAOM dynamics diverged by mineralogy: Eifelgold yielded the longest system transit time by actively promoting modern carbon transfer into both oPOM and MAOM pools while suppressing decomposition. Hühnerberg enhanced physical aggregate stability and oPOM accumulation, but accelerated MAOM decomposition, limiting net gains in whole-soil carbon persistence. Bolsdorfer exhibited the shortest transit time among amended soils; despite generating poorly crystalline mineral phases, continuous sodium release likely induced clay dispersion and accelerated organic matter turnover. Exchangeable $\text{Ca}$ and reactive $\text{Al}$ stabilization suppressed MAOM breakdown, whereas oxidizable base cations mediate carbon transfer between pools and stimulate microbial processing. Ultimately, bulk SOC and $\Delta^{14}\text{C}$ trajectories reflect a dynamic balance between modern carbon incorporation into microaggregates and the destabilization of legacy pools. These findings demonstrate that ERW feedstocks produce different biogeochemical responses; selecting rock amendments with optimal cation and silica stoichiometry is essential to maximize durable organic carbon sequestration alongside inorganic carbon removal.  
+Enhanced rock weathering (ERW) using crushed silicate rocks is increasingly investigated as a strategy for atmospheric $\text{CO}_2$ removal, but its effects on existing soil organic carbon (SOC) dynamics remain poorly understood. We examined how three silicate amendments with contrasting mineralogies (Eifelgold, Hühnerberg and Bolsdorfer), alongside lime, influenced soil geochemistry, SOC fractions and carbon turnover three years after application in a field experiment. Soil geochemical analyses, density fractionation, Fourier-transform infrared (FTIR) spectroscopy and radiocarbon ($\Delta^{14}\text{C}$) measurements were combined with compartmental carbon turnover modelling (SoilR). The amendments produced distinct geochemical responses, including differences in exchangeable and reducible cation pools and oxalate-extractable mineral indicators. These changes were accompanied by contrasting patterns of carbon allocation. Bulk SOC, oPOM-C and MAOM-C showed no clear treatment-related differences, whereas fPOM-C was higher under Hühnerberg and Bolsdorfer. Modelled carbon dynamics further revealed contrasting responses among amendments. Eifelgold and lime had the highest estimated system carbon transit times and were associated with greater transfer of carbon from oPOM to MAOM. Hühnerberg increased fPOM-C and aggregate stability, but was also associated with a higher modelled MAOM decomposition rate. In contrast, Bolsdorfer showed little change in oPOM-to-MAOM carbon transfer despite its distinct weathering-related geochemical signature. Across treatments, modelled fPOM decomposition rates were higher, while oPOM decomposition rates tended to be lower than in the control. Relationships between soil properties and carbon dynamics highlighted associations with exchangeable and oxidizable cations, secondary mineral indicators and changes in SOM functional-group signals. Overall, the results show that silicate amendments influence soil carbon cycling through mineralogy-dependent changes in geochemistry and carbon transfer among SOM fractions, with implications for how feedstock selection and soil carbon responses should be considered when evaluating the carbon-removal potential of ERW.
+
 \end{abstract}
+
 
 \begin{keyword}
 Soil organic carbon
@@ -379,45 +386,45 @@ The mean values of all soil physicochemical properties for each treatment are gi
     Porewater measurements indicated continued alkalinity and Fe release under Bolsdorfer, whereas porewater Al concentrations decreased under Hühnerberg.
 
 \textbf{Soil pH, EC and CEC}
-  Three years after amendment, the control soil pH had a mean value of 5.99 (95\% CI 5.88-6.12). Bolsdorfer treatment showed the greatest change in pH relative to the control (mean increase of 0.21, 95\% CI 0.05-0.37, Pr = 0.99), followed by lime (mean increase of 0.19, 95\% CI 0.02-0.34, Pr = 0.98), Hühnerberg (mean increase of 0.16, 95\% CI 0.00-0.33, Pr = 0.98) and Eifelgold (mean increase of 0.10, 95\% CI -0.07 - 0.27, Pr = 0.88) (Fig. `<### comment id: vkg9E55_wlPfkkwTvEi32, user: teneille.nel@gmail.com, time: 1794912982431, content64: 'c29pbCBwSCBjb21wYXJpc29uIGZpZw==', responses: [], resolved: false ###>`ref`</### comment id: vkg9E55_wlPfkkwTvEi32 ###>`). 
-  The soil EC of the treatments did not differ a great amount from that of the control, with Bolsdorfer showing the largest difference (mean increase of 5.7 $\mu$S cm$^(-1)$, 95\% CI -1.64-12.35 $\mu$S cm$^(-1)$, Pr = 0.94 (Fig `<### comment id: 3rH8Vw6icYBbmlo-9oi3q, user: teneille.nel@gmail.com, time: 1794912996859, content64: 'U29pbCBFQyBjb21wYXJpc29uIGZpZw==', responses: [], resolved: false ###>`ref`</### comment id: 3rH8Vw6icYBbmlo-9oi3q ###>`).
-  While the CEC of the treatments did not differ greatly from that of the control (mean of 5.61 cmol$_c$ kg$^{-1}$, 95\% CI 4.69-6.57) three years after amendment, we observed  differences in base saturation with Bolsdorfer (mean increase of 5.20\%, 95\% CI -0.54-10.4\%, Pr = 0.96) and lime (mean increase of 4.05\%, 95\% CI -1.67-9.25, Pr = 0.93) treatments. (Fig `<### comment id: cTrZYsrHP4wirB8KqgsZU, user: teneille.nel@gmail.com, time: 1794923970087, content64: 'U0kgZmlnIENFQyBjb21wYXJpc29u', responses: [], resolved: false ###>`ref`</### comment id: cTrZYsrHP4wirB8KqgsZU ###>`).
-  Relative to the control, Bolsdorfer showed the greatest changes in titratable acidity (mean decrease of 0.17 cmol$_c$ kg$^{-1}$, 95\% CI -0.57-0.25 cmol$_c$ kg$^{-1}$, Pr = 0.80) as well as exchangeable Ca (mean increase of 0.50 cmol$_c$ kg$^{-1}$, 95\% CI -0.34-1.27 cmol$_c$ kg$^{-1}$, Pr = 0.89), K (mean increase of 0.08 cmol$_c$ kg$^{-1}$, 95\% CI 0.0-0.15 cmol$_c$ kg$^{-1}$, Pr = 0.98), Na (mean increase of 0.03 cmol$_c$ kg$^{-1}$, 95\% CI 0.01-0.05 cmol$_c$ kg$^{-1}$, Pr = 1.0) Mn (mean decrease of 0.001, 95\% CI -0.004-0.002 cmol$_c$ kg$^{-1}$, Pr = 0.82) and Al (mean decrease of 0.003 cmol$_c$ kg$^{-1}$, 95\% CI -0.01-0.006 cmol$_c$ kg$^{-1}$, Pr = 0.73) content. The Eifelgold treatment also affected exchangeable Na content (mean increase of 0.01 cmol$_c$ kg$^{-1}$, 95\% CI -0.003-0.03 cmol$_c$ kg$^{-1}$, Pr = 0.96) while lime, Hühnerberg and Eifelgold treatments also increased exchangeable Ca content relative to the control by a mean of 0.50, 0.39 and 0.34 cmol$_c$ kg$^{-1}$, respectively (Pr $>$ 0.79). (Fig `<### comment id: 89Q_mXhQ7af88vWWj63hl, user: teneille.nel@gmail.com, time: 1794923991360, content64: 'U0kgZmlnIGV4Y2hhbmdlYWJsZSBjYXRpb25z', responses: [], resolved: false ###>`ref`</### comment id: 89Q_mXhQ7af88vWWj63hl ###>`).
-  We observed the greatest difference in exchangeable Mg content relative to the control, in the Hühnerberg treatment (mean increase of 0.27 cmol$_c$ kg$^{-1}$, 95\% CI 0.03-0.48 cmol$_c$ kg$^{-1}$, Pr = 0.98), followed by Bolsdorfer, Eifelgold and lime treatments (mean increases of 0.13, 0.09 and 0.06 cmol$_c$ kg$^{-1}$, respectively; Pr $\geq$ 0.72). There were no clear effects of the treatments on exchangeable Fe content three years after amendment. (Fig `<### comment id: E4v0FjU5t4R-T4XH7iiyv, user: teneille.nel@gmail.com, time: 1794924001587, content64: 'U0kgZmlnIGV4Y2hhbmdlYWJsZSBjYXRpb25z', responses: [], resolved: false ###>`ref`</### comment id: E4v0FjU5t4R-T4XH7iiyv ###>`).
+  Three years after amendment, the control soil pH had a mean value of 5.99 (95\% CI 5.88-6.12). Bolsdorfer treatment showed the greatest change in pH relative to the control (mean increase of 0.21, 95\% CI 0.05-0.37, Pr = 0.99), followed by lime (mean increase of 0.19, 95\% CI 0.02-0.34, Pr = 0.98), Hühnerberg (mean increase of 0.16, 95\% CI 0.00-0.33, Pr = 0.98) and Eifelgold (mean increase of 0.10, 95\% CI -0.07 - 0.27, Pr = 0.88) (Fig. \ref{pHECCEC_comparison}A). 
+  The soil EC of the treatments did not differ a great amount from that of the control, with Bolsdorfer showing the largest difference (mean increase of 5.7 $\mu$S cm$^(-1)$, 95\% CI -1.64-12.35 $\mu$S cm$^(-1)$, Pr = 0.94 (Fig. \ref{pHECCEC_comparison}A).
+  While the CEC of the treatments did not differ greatly from that of the control (mean of 5.61 cmol$_c$ kg$^{-1}$, 95\% CI 4.69-6.57) three years after amendment, we observed  differences in base saturation with Bolsdorfer (mean increase of 5.20\%, 95\% CI -0.54-10.4\%, Pr = 0.96) and lime (mean increase of 4.05\%, 95\% CI -1.67-9.25, Pr = 0.93) treatments (Fig. \ref{pHECCEC_comparison}B).
+  Relative to the control, Bolsdorfer showed the greatest changes in titratable acidity (mean decrease of 0.17 cmol$_c$ kg$^{-1}$, 95\% CI -0.57-0.25 cmol$_c$ kg$^{-1}$, Pr = 0.80) as well as exchangeable Ca (mean increase of 0.50 cmol$_c$ kg$^{-1}$, 95\% CI -0.34-1.27 cmol$_c$ kg$^{-1}$, Pr = 0.89), K (mean increase of 0.08 cmol$_c$ kg$^{-1}$, 95\% CI 0.0-0.15 cmol$_c$ kg$^{-1}$, Pr = 0.98), Na (mean increase of 0.03 cmol$_c$ kg$^{-1}$, 95\% CI 0.01-0.05 cmol$_c$ kg$^{-1}$, Pr = 1.0) Mn (mean decrease of 0.001, 95\% CI -0.004-0.002 cmol$_c$ kg$^{-1}$, Pr = 0.82) and Al (mean decrease of 0.003 cmol$_c$ kg$^{-1}$, 95\% CI -0.01-0.006 cmol$_c$ kg$^{-1}$, Pr = 0.73) content. The Eifelgold treatment also affected exchangeable Na content (mean increase of 0.01 cmol$_c$ kg$^{-1}$, 95\% CI -0.003-0.03 cmol$_c$ kg$^{-1}$, Pr = 0.96) while lime, Hühnerberg and Eifelgold treatments also increased exchangeable Ca content relative to the control by a mean of 0.50, 0.39 and 0.34 cmol$_c$ kg$^{-1}$, respectively (Pr $>$ 0.79) (Fig. \ref{pHECCEC_comparison}B).
+  We observed the greatest difference in exchangeable Mg content relative to the control, in the Hühnerberg treatment (mean increase of 0.27 cmol$_c$ kg$^{-1}$, 95\% CI 0.03-0.48 cmol$_c$ kg$^{-1}$, Pr = 0.98), followed by Bolsdorfer, Eifelgold and lime treatments (mean increases of 0.13, 0.09 and 0.06 cmol$_c$ kg$^{-1}$, respectively; Pr $\geq$ 0.72). There were no clear effects of the treatments on exchangeable Fe content three years after amendment (Fig. \ref{pHECCEC_comparison}B.
 
 \textbf{Sequential cation extractions:}
-  Tessier sequential extractions indicated treatment-related differences in the distribution of several elements among the extracted fractions (Fig. `<### comment id: HDuLYanK0lU1VPQJA7zw_, user: teneille.nel@gmail.com, time: 1794925338211, content64: 'U0kgdG10IGNvbXBhcmlzb24gVGVzc2llcg==', responses: [], resolved: false ###>`ref`</### comment id: HDuLYanK0lU1VPQJA7zw_ ###>`). In the acetic-acid-extractable fraction, Bolsdorfer showed the greatest increase in K relative to the control (mean increase of 0.077 mg g\(^{-1}\), 95\% CI 0.047–0.106, Pr = 1.0), followed by smaller differences in Eifelgold (mean increase of 0.012 mg g\(^{-1}\), 95\% CI approximately -0.0003–0.025, Pr = 0.97). Acetic-acid-extractable Na also increased under Bolsdorfer (mean increase of 0.138 mg g\(^{-1}\), 95\% CI 0.072–0.223, Pr = 1.0) and Eifelgold (mean increase of 0.058 mg g\(^{-1}\), 95\% CI 0.002–0.114, Pr = 0.98). The greatest increase in acetic-acid-extractable Mg was observed under Hühnerberg (mean increase of 0.016 mg g\(^{-1}\), 95\% CI 0.008–0.023, Pr = 1.0), followed by Bolsdorfer (mean increase of 0.011 mg g\(^{-1}\), 95\% CI 0.003–0.017, Pr = 0.99). Acetic-acid-extractable Ca showed a tendency to increase across all treatments, with the greatest difference under Bolsdorfer (mean increase of 0.114 mg g\(^{-1}\), 95\% CI -0.016–0.230, Pr = 0.96), although the credible intervals overlapped zero.
-  In the H$_2$O$_2$-extractable fraction, lime showed an increase in Fe (mean increase of 0.040 mg g\(^{-1}\), 95\% CI 0.004–0.074, Pr = 0.98) and Al (mean increase of 0.027 mg g\(^{-1}\), 95\% CI 0.001–0.052, Pr = 0.98) relative to the control. Eifelgold also increased H$_2$O$_2$-extractable Al (mean increase of 0.026 mg g\(^{-1}\), 95\% CI 0.001–0.050, Pr = 0.98). H$_2$O$_2$-extractable Si increased under both lime and Bolsdorfer, with mean increases of 0.035 and 0.036 mg g\(^{-1}\), respectively (95\% CI 0.004–0.063 and 0.003–0.065, respectively; Pr = 0.98 for both).
-  In the hydroxylamine-extractable fraction, Hühnerberg showed the greatest increase in Fe relative to the control (mean increase of 0.426 mg g\(^{-1}\), 95\% CI 0.012–0.803, Pr = 0.98). Hühnerberg and Bolsdorfer also increased hydroxylamine-extractable Si (mean increases of 0.361 and 0.307 mg g\(^{-1}\), respectively; 95\% CI 0.062–0.634 and 0.016–0.579, respectively; Pr = 0.99 and 0.98). The treatments showed no clear differences in hydroxylamine-extractable Mn or Al relative to the control.
+  Tessier sequential extractions indicated treatment-related differences in the distribution of several elements among the extracted fractions (Fig. \ref{fig:tessier_comparisons}). In the acetic-acid-extractable fraction, Bolsdorfer showed the greatest increase in K relative to the control (mean increase of 0.077 mg g\(^{-1}\), 95\% CI 0.047–0.106, Pr = 1.0), followed by smaller differences in Eifelgold (mean increase of 0.012 mg g\(^{-1}\), 95\% CI approximately -0.0003–0.025, Pr = 0.97) (Fig. \ref{fig:tessier_comparisons}A). Acetic-acid-extractable Na also increased under Bolsdorfer (mean increase of 0.138 mg g\(^{-1}\), 95\% CI 0.072–0.223, Pr = 1.0) and Eifelgold (mean increase of 0.058 mg g\(^{-1}\), 95\% CI 0.002–0.114, Pr = 0.98). The greatest increase in acetic-acid-extractable Mg was observed under Hühnerberg (mean increase of 0.016 mg g\(^{-1}\), 95\% CI 0.008–0.023, Pr = 1.0), followed by Bolsdorfer (mean increase of 0.011 mg g\(^{-1}\), 95\% CI 0.003–0.017, Pr = 0.99). Acetic-acid-extractable Ca showed a tendency to increase across all treatments, with the greatest difference under Bolsdorfer (mean increase of 0.114 mg g\(^{-1}\), 95\% CI -0.016–0.230, Pr = 0.96) (Fig. \ref{fig:tessier_comparisons}A).
+  In the hydroxylamine-extractable fraction, Hühnerberg showed the greatest increase in Fe relative to the control (mean increase of 0.426 mg g\(^{-1}\), 95\% CI 0.012–0.803, Pr = 0.98) (Fig. \ref{fig:tessier_comparisons}B). Hühnerberg and Bolsdorfer also increased hydroxylamine-extractable Si (mean increases of 0.361 and 0.307 mg g\(^{-1}\), respectively; 95\% CI 0.062–0.634 and 0.016–0.579, respectively; Pr = 0.99 and 0.98). The treatments showed no clear differences in hydroxylamine-extractable Mn or Al relative to the control (Fig. \ref{fig:tessier_comparisons}B).
+  In the H$_2$O$_2$-extractable fraction, lime showed an increase in Fe (mean increase of 0.040 mg g\(^{-1}\), 95\% CI 0.004–0.074, Pr = 0.98) and Al (mean increase of 0.027 mg g\(^{-1}\), 95\% CI 0.001–0.052, Pr = 0.98) relative to the control. Eifelgold also increased H$_2$O$_2$-extractable Al (mean increase of 0.026 mg g\(^{-1}\), 95\% CI 0.001–0.050, Pr = 0.98). H$_2$O$_2$-extractable Si increased under both lime and Bolsdorfer, with mean increases of 0.035 and 0.036 mg g\(^{-1}\), respectively (95\% CI 0.004–0.063 and 0.003–0.065, respectively; Pr = 0.98 for both) (Fig. \ref{fig:tessier_comparisons}C).
 
 \textbf{Oxalate and DCB extractions:}
-    Three year after amendment, we observed a lower ratio of oxalate:DCB-extractable Fe content in Bolsdorfer treatment, relative to the control (mean difference of -0.05,  95\% CI -0.21-0.11, Pr = 0.76). The greatest difference in the ratio of oxalate:DCB-extractable Al content relative to the control was observed in Bolsdorfer (mean increase of 0.19, 95\% CI -0.05-0.42, Pr = 0.94) followed by Eifelgold and lime treatments (mean increases of 0.18 and 0.11, respectively, Pr $\geq$ 0.93). The treatments did not show large differences in the ratio of oxalate:DCB-extractable Mn content relative to the control. Silicate treatments showed an increase in the ratio of oxalate:DCB-extractable Si content, with the greatest differences observed in Bolsdorfer (mean increase of 0.78, 95\% CI 0.34-1.16, Pr = 1.0) and Eifelgold treatments (mean increase of 0.78; 95\% CI 0.02-0.75, Pr = 0.98). 
-  The ratios of oxalate-extractable Fe:Si decreased in all treatments relative to the control, with the largest changes observed in Bolsdorfer (mean decrease of 6.35, 95\% CI  -9.68--2.61, Pr = 1.0) followed by Eifelgold (mean decreases of 5.44, 95\% CI -8.78--1.74, Pr = 1.0). 
-  Similarly to the trends observed in oxalate-extractable Fe:Si, the ratios of oxalate-extractable Al:Si decreased in all treatments relative to the control, with the largest changes observed in Bolsdorfer (mean decrease of 13.2, 95\% CI -16.65--9.26, Pr = 1.0) followed by Eifelgold (mean decrease of 10.66, 95\% CI -14.08--6.83, Pr = 1.0). (`<### comment id: 6HpZmG_O4qVOX_GcSmryK, user: teneille.nel@gmail.com, time: 1794925461029, content64: 'U0kgZmlnIG94IERDQiBjb21wYXJpc29ucw==', responses: [], resolved: false ###>`Fig. ref`</### comment id: 6HpZmG_O4qVOX_GcSmryK ###>`).
+    Three year after amendment, we observed a lower ratio of oxalate:DCB-extractable Fe content in Bolsdorfer treatment, relative to the control (mean difference of -0.05,  95\% CI -0.21-0.11, Pr = 0.76) (Fig. \ref{fig:Oxalate_DCB_comparisons}). The greatest difference in the ratio of oxalate:DCB-extractable Al content relative to the control was observed in Bolsdorfer (mean increase of 0.19, 95\% CI -0.05-0.42, Pr = 0.94) followed by Eifelgold and lime treatments (mean increases of 0.18 and 0.11, respectively, Pr $\geq$ 0.93). The treatments did not show large differences in the ratio of oxalate:DCB-extractable Mn content relative to the control. Silicate treatments showed an increase in the ratio of oxalate:DCB-extractable Si content, with the greatest differences observed in Bolsdorfer (mean increase of 0.78, 95\% CI 0.34-1.16, Pr = 1.0) and Eifelgold treatments (mean increase of 0.78; 95\% CI 0.02-0.75, Pr = 0.98) (Fig. \ref{fig:Oxalate_DCB_comparisons}). 
+  The ratios of oxalate-extractable Fe:Si decreased in all treatments relative to the control, with the largest changes observed in Bolsdorfer (mean decrease of 6.35, 95\% CI  -9.68--2.61, Pr = 1.0) followed by Eifelgold (mean decreases of 5.44, 95\% CI -8.78--1.74, Pr = 1.0) (Fig. \ref{fig:Oxalate_DCB_comparisons}). 
+  Similarly to the trends observed in oxalate-extractable Fe:Si, the ratios of oxalate-extractable Al:Si decreased in all treatments relative to the control, with the largest changes observed in Bolsdorfer (mean decrease of 13.2, 95\% CI -16.65--9.26, Pr = 1.0) followed by Eifelgold (mean decrease of 10.66, 95\% CI -14.08--6.83, Pr = 1.0) (Fig. \ref{fig:Oxalate_DCB_comparisons}).
 
 \textbf{Aggregate stability:}
-  Three years after amendment, the Hühnerberg and Bolsdorfer treatments showed tendencies towards increased GMD-H$_2$O (mean increases of 0.059 and 0.048, respectively; Pr = 0.87 and 0.78) and MWD-H$_2$O (mean increases of 0.058 and 0.071, respectively; Pr = 0.88 and 0.91) relative to the control. D-H$_2$O showed a tendency to decrease across all treatments relative to the control, with the greatest difference observed under Hühnerberg (mean decrease of 0.086, 95\% CI -0.220–0.057, Pr = 0.89).
-  The ratio of GMD-ox:GMD-H$_2$O and MWD-ox:MWD-H$_2$O did not differ clearly between treatments and the control. In contrast, the D-ox:D-H$_2$O ratio increased under lime (mean increase of 0.027, 95\% CI 0.007–0.045, Pr = 0.99), with a similar but less pronounced tendency under Hühnerberg (mean increase of 0.019, 95\% CI -0.001–0.037, Pr = 0.97). No clear differences in D-ox:D-H$_2$O were observed under Eifelgold or Bolsdorfer.
+  Three years after amendment, the Hühnerberg and Bolsdorfer treatments showed tendencies towards increased GMD-H$_2$O (mean increases of 0.059 and 0.048, respectively; Pr = 0.87 and 0.78) and MWD-H$_2$O (mean increases of 0.058 and 0.071, respectively; Pr = 0.88 and 0.91) relative to the control (Fig. \ref{fig:aggstab_comparison}). D-H$_2$O showed a tendency to decrease across all treatments relative to the control, with the greatest difference observed under Hühnerberg (mean decrease of 0.086, 95\% CI -0.220–0.057, Pr = 0.89).
+  The ratio of GMD-ox:GMD-H$_2$O and MWD-ox:MWD-H$_2$O did not differ clearly between treatments and the control. In contrast, the D-ox:D-H$_2$O ratio increased under lime (mean increase of 0.027, 95\% CI 0.007–0.045, Pr = 0.99), with a similar but less pronounced tendency under Hühnerberg (mean increase of 0.019, 95\% CI -0.001–0.037, Pr = 0.97). No clear differences in D-ox:D-H$_2$O were observed under Eifelgold or Bolsdorfer (Fig. \ref{fig:aggstab_comparison}).
 
 \textbf{FTIR-derived SOM characteristics:}
-  Hühnerberg and Bolsdorfer showed tendencies towards increased carbonyl signal areas relative to the control (mean increases of 0.30 and 0.30, respectively; Pr = 0.93 for both) after cation extraction, for soils sampled three years after amendment. A similar pattern was observed for total carboxylate (COO) signal areas, with mean increases of 0.32 under Hühnerberg (Pr = 0.93) and 0.25 under Bolsdorfer (Pr = 0.88). Bolsdorfer also showed a tendency towards increased total aliphatic signal area (mean increase of 0.056, 95\% CI -0.028–0.124, Pr = 0.92).
-  In contrast, polysaccharide signal areas tended to decrease across all treatments relative to the control, with the greatest decrease observed under lime (mean decrease of 0.17, 95\% CI -0.47–0.16, Pr = 0.86). Changes in aromatic, carbonate bending and stretching, poorly crystalline mineral-associated, silicate and total spectral signal areas showed no clear treatment-related differences. Overall, the observed differences in FTIR signal areas were characterised by relatively high uncertainty, with all 95\% credible intervals overlapping zero.
+  Hühnerberg and Bolsdorfer showed tendencies towards increased carbonyl signal areas relative to the control (mean increases of 0.30 and 0.30, respectively; Pr = 0.93 for both) after cation extraction, for soils sampled three years after amendment (Fig. \ref{fig:FTIR_comparison}). A similar pattern was observed for total carboxylate (COO) signal areas, with mean increases of 0.32 under Hühnerberg (Pr = 0.93) and 0.25 under Bolsdorfer (Pr = 0.88). Bolsdorfer also showed a tendency towards increased total aliphatic signal area (mean increase of 0.056, 95\% CI -0.028–0.124, Pr = 0.92) (Fig. \ref{fig:FTIR_comparison}).
+  In contrast, polysaccharide signal areas tended to decrease across all treatments relative to the control, with the greatest decrease observed under lime (mean decrease of 0.17, 95\% CI -0.47–0.16, Pr = 0.86). Changes in aromatic, carbonate bending and stretching, poorly crystalline mineral-associated, silicate and total spectral signal areas showed no clear treatment-related differences (Fig. \ref{fig:FTIR_comparison}). Overall, the observed differences in FTIR signal areas were characterised by relatively high uncertainty, with all 95\% credible intervals overlapping zero.
 
 \textbf{Carbon and radiocarbon content}
-  Three years after amendment, SOC concentrations in bulk soil, MAOM and oPOM did not differ clearly between the amended treatments and the control. However, fPOM-C increased under Hühnerberg (mean increase of 10.54, 95\% CI 0.49–19.65, Pr = 0.98) and Bolsdorfer (mean increase of 9.11, 95\% CI -0.79–18.67, Pr = 0.97) relative to the control. Lime and Eifelgold also showed tendencies towards increased fPOM-C (mean increases of 4.62 and 4.08, respectively; Pr = 0.83 and 0.81).
-  Radiocarbon signatures of bulk SOC, MAOM and oPOM showed no clear differences between treatments and the control. Bulk SOC $\Delta^{14}$C tended to decrease under Bolsdorfer (mean decrease of 22.49‰, 95\% CI -59.11–14.14, Pr = 0.89), although the credible interval overlapped zero. In contrast, fPOM $\Delta^{14}$C tended to increase under Hühnerberg (mean increase of 22.20‰, 95\% CI -0.54–42.72, Pr = 0.97) and lime (mean increase of 16.71‰, 95\% CI -6.25–37.52, Pr = 0.93). Eifelgold showed a smaller tendency towards increased fPOM $\Delta^{14}$C (mean increase of 11.68‰, Pr = 0.85), while Bolsdorfer showed little difference relative to the control (mean increase of 1.47‰, Pr = 0.55).
+  Three years after amendment, SOC concentrations in bulk soil, MAOM and oPOM did not differ clearly between the amended treatments and the control. However, fPOM-C increased under Hühnerberg (mean increase of 10.54, 95\% CI 0.49–19.65, Pr = 0.98) and Bolsdorfer (mean increase of 9.11, 95\% CI -0.79–18.67, Pr = 0.97) relative to the control (Fig. \ref{fig:C14C_comparison}). Lime and Eifelgold also showed tendencies towards increased fPOM-C (mean increases of 4.62 and 4.08, respectively; Pr = 0.83 and 0.81).
+  Radiocarbon signatures of bulk SOC, MAOM and oPOM showed no clear differences between treatments and the control. Bulk SOC $\Delta^{14}$C tended to decrease under Bolsdorfer (mean decrease of 22.49‰, 95\% CI -59.11–14.14, Pr = 0.89), although the credible interval overlapped zero. In contrast, fPOM $\Delta^{14}$C tended to increase under Hühnerberg (mean increase of 22.20‰, 95\% CI -0.54–42.72, Pr = 0.97) and lime (mean increase of 16.71‰, 95\% CI -6.25–37.52, Pr = 0.93). Eifelgold showed a smaller tendency towards increased fPOM $\Delta^{14}$C (mean increase of 11.68‰, Pr = 0.85), while Bolsdorfer showed little difference relative to the control (mean increase of 1.47‰, Pr = 0.55) (Fig. \ref{fig:C14C_comparison}).
 
 \textbf{Modeled carbon persistence parameters:}
-  Posterior distributions of decomposition rates exhibited sharper peaks than those of the inter-pool transfer coefficients, indicating comparatively greater precision in the estimation of decomposition parameters. Transfer coefficients had broader posterior distributions, reflecting greater parameter uncertainty.
-  The mean system C transit time increased in the order Control (11.2 y), Bolsdorfer (13.4 y), Hühnerberg (15.6 y), lime (23.7 y) and Eifelgold (27.4 y). Relative to the control, posterior mean transit times were higher under all amendment treatments, with the largest differences under Eifelgold (+16.2; 95\% CI: -13.6 to 52.8; Pr = 0.88) and lime (+12.3; 95\% CI: -17.2 to 45.3; Pr = 0.84). The differences were smaller under Hühnerberg (+4.3; 95\% CI: -22.0 to 28.5; Pr = 0.70) and Bolsdorfer (+2.1; 95\% CI: -23.3 to 33.3; Pr = 0.58).
-  All amendment treatments had lower posterior mean oPOM-C decomposition rates (\(k_i\)) than the control (0.0557 y$^{-1}$). The corresponding treatment–control differences ranged from -0.0283 y$^{-1}$ under Eifelgold to -0.0022 y$^{-1}$ under Bolsdorfer; however, posterior probabilities of lower rates were modest (Pr = 0.52–0.77). In contrast, the estimated fPOM-C decomposition rate (\(k_f\)) was higher under all amendments than under the control (0.278 y$^{-1}$), particularly under Eifelgold (0.437 y$^{-1}$, Pr = 0.76) and lime (0.377 y$^{-1}$, Pr = 0.94). The estimated MAOM-C decomposition rate (\(k_s\)) was notably higher under Hühnerberg (0.0396 y$^{-1}$) than under the control (0.0149 y$^{-1}$; mean difference = +0.0243; 95\% CI: -0.0102 to 0.0461; Pr = 0.92). Estimates under the other treatments were similar to the control.
-  The transfer coefficients showed contrasting treatment responses. The estimated transfer coefficient from fPOM to oPOM (\(\alpha_{fi}\)) was higher under all amendments (0.248–0.338) than under the control (0.239), with the largest posterior mean under Eifelgold (0.338; difference = +0.0986; 95\% CI: -0.2749 to 0.4171; Pr = 0.70). The estimated transfer coefficient from oPOM to MAOM (\(\alpha_{is}\)) was higher under lime (0.283), Hühnerberg (0.224) and Eifelgold (0.256) than under the control (0.0515), with the largest differences under lime (+0.231; 95\% CI: -0.0343 to 0.4558; Pr = 0.94) and Eifelgold (+0.205; 95\% CI: -0.0494 to 0.4457; Pr = 0.90). In contrast, Bolsdorfer had an estimated \(\alpha_{is}\) of 0.0513, almost identical to the control. 
-  Estimated fPOM pool age was relatively similar across treatments, ranging from 2.65 y under lime to 3.62 y under the control. Lime showed the strongest tendency towards a younger fPOM pool (mean difference = -0.97 y; 95\% CI: -2.31 to 0.23; Pr = 0.94). Estimated oPOM pool ages were higher under lime (55.3 y), Hühnerberg (53.7 y) and Eifelgold (61.4 y) than under the control (33.7 y), whereas Bolsdorfer (34.2 y) was similar, but these estimates were  uncertain. Estimated MAOM pool age was highest under lime (168.8 y) and Eifelgold (149.0 y), compared with 130.6 y under the control and 131.8 y under Bolsdorfer. Hühnerberg had the lowest estimated MAOM pool age (81.5 y), although the contrast with the control remained uncertain (mean difference = -48.2 y; 95\% CI: -188.0 to 77.9; Pr = 0.76).
+  Posterior distributions of decomposition rates exhibited sharper peaks than those of the inter-pool transfer coefficients, indicating comparatively greater precision in the estimation of decomposition parameters. Transfer coefficients had broader posterior distributions and less tendency toward convergence, reflecting greater parameter uncertainty (Fig. \ref{fig:pairs_plot_control}-\ref{fig:convergence_plot_Lime}).
+  All amendment treatments had lower posterior mean oPOM-C decomposition rates (\(k_i\)) than the control (0.0557 y$^{-1}$). The corresponding treatment–control differences ranged from -0.0283 y$^{-1}$ under Eifelgold to -0.0022 y$^{-1}$ under Bolsdorfer; however, posterior probabilities of lower rates were modest (Pr = 0.52–0.77) (Fig. \ref{fig:SoilRpars_comparison}A). In contrast, the estimated fPOM-C decomposition rate (\(k_f\)) was higher under all amendments than under the control (0.278 y$^{-1}$), particularly under Eifelgold (0.437 y$^{-1}$, Pr = 0.76) and lime (0.377 y$^{-1}$, Pr = 0.94). The estimated MAOM-C decomposition rate (\(k_s\)) was notably higher under Hühnerberg (0.0396 y$^{-1}$) than under the control (0.0149 y$^{-1}$; mean difference = +0.0243; 95\% CI: -0.0102 to 0.0461; Pr = 0.92) (Fig. \ref{fig:SoilRpars_comparison}A). Estimates under the other treatments were similar to the control.
+  The transfer coefficients showed contrasting treatment responses (Fig. \ref{fig:SoilRpars_comparison}B). The estimated transfer coefficient from fPOM to oPOM (\(\alpha_{fi}\)) was higher under all amendments (0.248–0.338) than under the control (0.239), with the largest posterior mean under Eifelgold (0.338; difference = +0.0986; 95\% CI: -0.2749 to 0.4171; Pr = 0.70). The estimated transfer coefficient from oPOM to MAOM (\(\alpha_{is}\)) was higher under lime (0.283), Hühnerberg (0.224) and Eifelgold (0.256) than under the control (0.0515), with the largest differences under lime (+0.231; 95\% CI: -0.0343 to 0.4558; Pr = 0.94) and Eifelgold (+0.205; 95\% CI: -0.0494 to 0.4457; Pr = 0.90). In contrast, Bolsdorfer had an estimated \(\alpha_{is}\) of 0.0513, almost identical to the control (Fig. \ref{fig:SoilRpars_comparison}B). 
+  Estimated fPOM pool age was relatively similar across treatments, ranging from 2.65 y under lime to 3.62 y under the control (Fig. \ref{fig:plot_log_age_tt_control}, \ref{fig:plot_log_age_tt_Bolsdorfer}, \ref{fig:plot_log_age_tt_Huhnerberg}, \ref{fig:plot_log_age_tt_Eifelgold}, \ref{fig:plot_log_age_tt_Lime}). Lime showed the strongest tendency towards a younger fPOM pool (mean difference = -0.97 y; 95\% CI: -2.31 to 0.23; Pr = 0.94). Estimated oPOM pool ages were higher under lime (55.3 y), Hühnerberg (53.7 y) and Eifelgold (61.4 y) than under the control (33.7 y), whereas Bolsdorfer (34.2 y) was similar, but these estimates were  uncertain. Estimated MAOM pool age was highest under lime (168.8 y) and Eifelgold (149.0 y), compared with 130.6 y under the control and 131.8 y under Bolsdorfer. Hühnerberg had the lowest estimated MAOM pool age (81.5 y), although the contrast with the control remained uncertain (mean difference = -48.2 y; 95\% CI: -188.0 to 77.9; Pr = 0.76) (Fig. \ref{fig:SoilRpars_comparison}C).
+  The mean system C transit time increased in the order Control (11.2 y), Bolsdorfer (13.4 y), Hühnerberg (15.6 y), lime (23.7 y) and Eifelgold (27.4 y) (Fig. ref.). Relative to the control, posterior mean transit times were higher under all amendment treatments, with the largest differences under Eifelgold (+16.2; 95\% CI: -13.6 to 52.8; Pr = 0.88) and lime (+12.3; 95\% CI: -17.2 to 45.3; Pr = 0.84). The differences were smaller under Hühnerberg (+4.3; 95\% CI: -22.0 to 28.5; Pr = 0.70) and Bolsdorfer (+2.1; 95\% CI: -23.3 to 33.3; Pr = 0.58).
 
 \subsection{Relationships between soil carbon stocks, radiocarbon and soil properties}
 \label{subsec:carbon_fractions}
   Diagnostics, predictors and the relative importance of their coefficients for models predicting C and $\Delta^{14}$C are given in `<### comment id: YHUvfISn8M8kSx9wuQjvE, user: teneille.nel@gmail.com, time: 1794927954235, content64: 'cmVmIFNJ', responses: [], resolved: false ###>`$Cd14C_geochem_mod_performance`</### comment id: YHUvfISn8M8kSx9wuQjvE ###>`.csv$, `<### comment id: zIfqbweB9Gm6l2EMhv4hN, user: teneille.nel@gmail.com, time: 1794927959676, content64: 'cmVmIFNJ', responses: [], resolved: false ###>`$coeffs_Cd14C_geochem_predictors`</### comment id: zIfqbweB9Gm6l2EMhv4hN ###>`.csv$ and $relative_importance_geochem_predictors.csv$.
-  The selected models performed reasonably well in describing variation in both C concentrations and $\Delta^{14}$C, with squared correlations between observed and fitted values ranging from 0.54 to 0.85. The strongest fit was obtained for fPOM-$\Delta^{14}$C ($R^2=0.85$), followed by MAOM-$\Delta^{14}$C ($R^2=0.83$), oPOM-$\Delta^{14}$C ($R^2=0.82$), and MAOM-C ($R^2=0.84$). The fPOM-C model had the lowest squared correlation ($R^2=0.54$). RMSE values ranged from 0.075 for bulk C to 4.878 for fPOM-C, and from 6.87 to 11.54 for the $\Delta^{14}$C responses. All models achieved 100\% coverage of observed values by their 95\% predictive intervals, while coverage by the 95\% intervals around fitted means ranged from 53 to 80\%. The selected models were parsimonious, retaining between one and four predictors from the candidate set. These performance metrics were calculated from the 15 observations used to fit each model and therefore describe in-sample performance rather than independent predictive validation.
+  The selected models `<### comment id: -v2PfJraXDvt6XvdhC8gT, user: teneille.nel@gmail.com, time: 1795013181018, content64: 'YWRkIHBvc3RlcmlvciBwcmVkaWN0aXZlIGludGVydmFscywgY2hlY2sgZm9yIHJlc2lkdWFscyBvZiBwYXJzIHRvIGp1c3RpZnkgbGluZWFyIHJlbGF0aW9uc2hpcCBhbmQgY2hlY2sgZm9yIGNvcnIgb2YgcG9zdGVyaW9yIGNvZWZmcyB0byBtYWtlIHN1cmU=', responses: [], resolved: false ###>`performed`</### comment id: -v2PfJraXDvt6XvdhC8gT ###>` reasonably well in describing variation in both C concentrations and $\Delta^{14}$C, with squared correlations between observed and fitted values ranging from 0.54 to 0.85. The strongest fit was obtained for fPOM-$\Delta^{14}$C ($R^2=0.85$), followed by MAOM-$\Delta^{14}$C ($R^2=0.83$), oPOM-$\Delta^{14}$C ($R^2=0.82$), and MAOM-C ($R^2=0.84$). The fPOM-C model had the lowest squared correlation ($R^2=0.54$). RMSE values ranged from 0.075 for bulk C to 4.878 for fPOM-C, and from 6.87 to 11.54 for the $\Delta^{14}$C responses. All models achieved 100\% coverage of observed values by their 95\% predictive intervals, while coverage by the 95\% intervals around fitted means ranged from 53 to 80\%. The selected models were parsimonious, retaining between one and four predictors from the candidate set. These performance metrics were calculated from the 15 observations used to fit each model and therefore describe in-sample performance rather than independent predictive validation.
   The parsimonious bulk C model retained exchangeable Ca and hydroxylamine-extractable Fe. Exchangeable Ca was positively associated with bulk C, with a one-standard-deviation increase corresponding to an estimated increase of 0.178 percentage points in C (95\% CI: 0.108–0.234; relative predictor importance: 67.3\%). Hydroxylamine-extractable Fe showed a negative association (-0.087 percentage points; 95\% CI: -0.142 to -0.019), accounting for the remaining 32.7\% of relative predictor importance.
   MAOM-C was positively associated with the water-stable aggregate fractal dimension (D-H$_2$O), which was the sole retained predictor. A one-standard-deviation increase in D-H$_2$O corresponded to an estimated increase of 0.216 percentage points in MAOM-C (95\% CI: 0.152–0.275).
   The oPOM-C model retained initial exchangeable Al and hydroxylamine-extractable Si. Both predictors were positively associated with oPOM-C, with Al accounting for 57.6\% of relative predictor importance (estimated increase of 4.37 percentage points per predictor standard deviation; 95\% CI: 2.23–6.33) and Si accounting for 42.4\% (increase of 3.21 percentage points; 95\% CI: 1.09–5.16). The fPOM-C model retained initial soil pH as its sole predictor, with a positive association corresponding to an estimated increase of 4.65 percentage points in fPOM-C per standard-deviation increase in pH (95\% CI: 1.55–7.37).
@@ -428,10 +435,10 @@ The mean values of all soil physicochemical properties for each treatment are gi
 
 \subsection{Relationships between soil properties and modeled decomposition parameters}
 \label{subsec:relationships}
-  Full correlation analyses for relationships between modeled decomposition parameterers and soil properties are given in \texttt{SoilRpars\_\_geochem\_correlation.csv}. The strongest correlations (Spearman $|rho|$ $\geq$ 0.5) are given in Fig `<### comment id: QP-wM3R0PTsP5eyq32F1w, user: teneille.nel@gmail.com, time: 1794928132866, content64: 'cmVmIGNvcnJlbGF0aW9uIGZpZw==', responses: [], resolved: false ###>`ref`</### comment id: QP-wM3R0PTsP5eyq32F1w ###>`.
-  The fast-pool decomposition rate ($k_f$) tended to increase with H$\_2$O$\_2$-extractable Al, Fe and K (mean posterior Spearman correlations of 0.46, 0.45 and 0.42, respectively; $\Pr(\rho>0)=0.87$, 0.87 and 0.76). In contrast, $k_f$ tended to decrease with the change in FTIR-derived polysaccharide signal following cation extraction ($\rho=-0.44$; $\Pr(\rho<0)=0.89$). The MAOM decomposition rate ($k_s$) was negatively associated with exchangeable Al ($\rho=-0.54$; $\Pr(\rho<0)=0.94$), whereas positive associations were indicated with exchangeable Mg and changes in FTIR-derived COO and carbonyl signals ($\rho=0.47$--0.48; $\Pr(\rho>0)\approx0.90$).
-  The transfer coefficient from oPOM to MAOM ($\alpha\_{is}$) showed the strongest directional associations with soil properties. It was positively associated with hydroxylamine-extractable Mn ($\rho=0.63$; $\Pr(\rho>0)=0.95$), initial exchangeable Mn ($\rho=0.55$; $\Pr(\rho>0)=0.90$) and H$*2$O$2$-extractable Na ($\rho=0.55$; $\Pr(\rho>0)=0.91$). Conversely, $\alpha{is}$ was negatively associated with the change in FTIR-derived polysaccharide signal following cation extraction ($\rho=-0.65$; $\Pr(\rho<0)=0.95$). Associations with the fPOM-to-oPOM transfer coefficient ($\alpha*{fi}$) were generally weaker and more uncertain.
-  System C transit time tended to increase with H$\_2$O$\_2$-extractable K, Al and Fe ($\rho=0.50$, 0.48 and 0.48; $\Pr(\rho>0)=0.88$, 0.85 and 0.86, respectively), and decrease with the change in FTIR-derived polysaccharide signal ($\rho=-0.53$; $\Pr(\rho<0)=0.87$). Overall, these relationships suggest that extractable cations and changes in SOM spectral characteristics were associated with variation in modeled decomposition, inter-pool transfer and system-level C persistence. However, the credible intervals for these correlations generally overlapped zero, and the associations should therefore be interpreted as indicative rather than conclusive evidence of geochemical controls on modeled C dynamics.
+  Full correlation analyses for relationships between modeled decomposition parameterers and soil properties are given in \texttt{SoilRpars\_\_geochem\_correlation.csv}. The strongest correlations (Spearman $|rho|$ $\geq$ 0.5) are given in Fig. \ref{fig:soilR_spearmancorr}.
+  The fast-pool decomposition rate ($k_f$) tended to increase with H$\_2$O$\_2$-extractable Al, Fe and K (mean posterior Spearman correlations of 0.46, 0.45 and 0.42, respectively; $\Pr(\rho>0)=0.87$, 0.87 and 0.76). In contrast, $k_f$ tended to decrease with the change in FTIR-derived polysaccharide signal following cation extraction ($\rho=-0.44$; $\Pr(\rho<0)=0.89$). The MAOM decomposition rate ($k_s$) was negatively associated with exchangeable Al ($\rho=-0.54$; $\Pr(\rho<0)=0.94$), whereas positive associations were indicated with exchangeable Mg and changes in FTIR-derived COO and carbonyl signals ($\rho=0.47$--0.48; $\Pr(\rho>0)\approx0.90$) Fig. \ref{fig:soilR_spearmancorr}.
+  The transfer coefficient from oPOM to MAOM ($\alpha\_{is}$) showed the strongest directional associations with soil properties. It was positively associated with hydroxylamine-extractable Mn ($\rho=0.63$; $\Pr(\rho>0)=0.95$), initial exchangeable Mn ($\rho=0.55$; $\Pr(\rho>0)=0.90$) and H$*2$O$2$-extractable Na ($\rho=0.55$; $\Pr(\rho>0)=0.91$). Conversely, $\alpha{is}$ was negatively associated with the change in FTIR-derived polysaccharide signal following cation extraction ($\rho=-0.65$; $\Pr(\rho<0)=0.95$). Associations with the fPOM-to-oPOM transfer coefficient ($\alpha*{fi}$) were generally weaker and more uncertain Fig. \ref{fig:soilR_spearmancorr}.
+  System C transit time tended to increase with H$\_2$O$\_2$-extractable K, Al and Fe ($\rho=0.50$, 0.48 and 0.48; $\Pr(\rho>0)=0.88$, 0.85 and 0.86, respectively), and decrease with the change in FTIR-derived polysaccharide signal ($\rho=-0.53$; $\Pr(\rho<0)=0.87$). Overall, these relationships suggest that extractable cations and changes in SOM spectral characteristics were associated with variation in modeled decomposition, inter-pool transfer and system-level C persistence. However, the credible intervals for these correlations generally overlapped zero, and the associations should therefore be interpreted as indicative rather than conclusive evidence of geochemical controls on modeled C dynamics Fig. \ref{fig:soilR_spearmancorr}.
 
 \section{Discussion}
 \label{sec:discussion}
@@ -587,7 +594,12 @@ Overall, this study demonstrates the importance of considering mineralogy-depend
 \section{Conclusions}
 \label{sec:conclusions}
 
-Summarize the main findings and their implications.
+Our results demonstrate that silicate amendments with contrasting mineralogies produce distinct geochemical and soil organic carbon (SOC) cycling responses, highlighting the importance of feedstock composition in determining the soil carbon consequences of enhanced rock weathering (ERW). Three years after application, these responses were more evident in carbon allocation and modelled turnover dynamics than in bulk SOC concentrations. Hühnerberg and Bolsdorfer increased free particulate organic matter (fPOM)-C, while modelled carbon transfer from occluded particulate organic matter (oPOM) to mineral-associated organic matter (MAOM) was higher under Eifelgold, Hühnerberg and lime than under the control. In contrast, Bolsdorfer showed little difference in this transfer pathway. The amendments also differed in their modelled decomposition dynamics: oPOM decomposition rates tended to be lower across treatments, whereas fPOM decomposition rates were higher, and Hühnerberg was associated with a higher modelled MAOM decomposition rate.
+
+The modelled system carbon transit times were highest under Eifelgold and lime, followed by Hühnerberg and Bolsdorfer, illustrating how the balance between carbon transfer and decomposition can produce contrasting estimates of system-level carbon persistence. In particular, the Hühnerberg results demonstrate that greater carbon transfer into protected fractions does not necessarily coincide with slower decomposition of MAOM. Similarly, the contrasting responses of Eifelgold and Bolsdorfer show that weathering-related changes in soil geochemistry do not translate uniformly into changes in carbon cycling. Relationships between soil carbon dynamics, extractable cations, secondary mineral indicators and SOM spectral characteristics further point to interactions between mineral weathering and organic matter processing as important controls on these responses.
+
+Taken together, these findings show that the effects of ERW on existing SOC cannot be inferred from bulk carbon concentrations or weathering rates alone. Assessments of its carbon-removal potential should also consider how feedstock-specific geochemical changes influence carbon allocation, transfer and decomposition across SOM fractions. Distinguishing these processes is essential for evaluating the potential SOC co-benefits of ERW and selecting silicate feedstocks that support both inorganic carbon removal and soil carbon retention.
+
 
 % -----------------------------------------------------------------------------
 % 8. ACKNOWLEDGEMENTS
@@ -753,7 +765,24 @@ Carbohydrate-associated vibrations, including contributions from plant- and micr
 
 \section{Figures}
 
-Predictors are displayed only where the absolute median Spearman rho $\geq$ 0.5.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/SoilRpars_comparison.png} 
+    \caption{`<### comment id: RMDwjg80f1U0oAXxhFLuC, user: teneille.nel@gmail.com, time: 1795011255646, content64: 'dXBkYXRlIGNhcHRpb24gdG8gaW5jbCBzb21lIG1vcmUgZGV0YWlscyBhYm91dCBkYXRhIHByb2Nlc3NpbmcuIGRlZmluZSB0cmVhdG1lbnQgYWJicmV2aWF0aW9ucw==', responses: [], resolved: false ###>`Comparisons`</### comment id: RMDwjg80f1U0oAXxhFLuC ###>` of posterior distributions of compartmental model-derived parameters (soil organic matter decomposition rates, transfer coefficients, soil organic matter pool ages and system transit time) between treatments and unamended control soil plots}
+    \label{fig:SoilRpars_comparison}
+\end{figure}
+
+\newpage
+
+  \begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/soilR_spearmancorr.png} 
+    \caption{Spearman correlation between compartmental model-derived parameters (soil organic matter decomposition rates, transfer coefficients, soil organic matter pool ages and system transit time) and geochemical properties. Geochemical predictors are displayed only where the absolute median Spearman rho $\geq$ 0.5 for at least one parameter}
+    \label{fig:soilR_spearmancorr}
+\end{figure}
+
+\newpage
+
 
 % -----------------------------------------------------------------------------
 % 10. REFERENCES
@@ -764,8 +793,230 @@ Predictors are displayed only where the absolute median Spearman rho $\geq$ 0.5.
 % -----------------------------------------------------------------------------
 % 11. SUPPLEMENTARY MATERIAL
 % -----------------------------------------------------------------------------
+\section{Supplementary Information}
+\label{sec:si}
 
-% If supplementary material is submitted as a separate file,
-% reference it in the manuscript as appropriate.
+% Prepend 'S' to all counters globally
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\theequation}{S\arabic{equation}}
+
+% Configure cleveref labels
+\crefname{section}{Section}{Sections}
+\crefname{figure}{Fig.}{Figs.}
+\crefname{table}{Table}{Tables}
+\crefname{equation}{Eq.}{Eqs.}
+
+\subsection{Supplementary Methods}
+\label{sec:si_methods}
+Add method descriptions if methods section in main text gets too long.
+
+\subsection{Supplementary Figures}
+\label{sec:si_figures}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/pHECCEC_comparison.png} 
+    \caption{Comparisons of soil pH, EC, CEC and exchangeable cations between treatments and unamended control soil plots}
+    \label{fig:pHECCEC_comparison}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/tessier_comparisons.png} 
+    \caption{Comparisons of cations sequentially extracted in acetic acid (carbonate-associated), hydroxylamine (reducible pool) and peroxide (oxidizable pool) between treatments and unamended control soil plots}
+    \label{fig:tessier_comparisons}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/Oxalate_DCB_comparisons.png} 
+    \caption{Comparisons of ratios of metals extracted in oxalate (poorly crystalline oxides) and DCB (crystalline oxides) between treatments and unamended control soil plots}
+    \label{fig:Oxalate_DCB_comparisons}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/FTIR_comparison.png} 
+    \caption{Comparisons of ratios of changes in relative peak areas of mid infrared-detectable organic functional groups between treatments and unamended control soil plots}
+    \label{fig:FTIR_comparison}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/FTIR_comparison.png} 
+    \caption{Comparisons of ratios of changes in relative peak areas of mid infrared-detectable organic functional groups between treatments and unamended control soil plots}
+    \label{fig:FTIR_comparison}
+\end{figure}
+
+
+\newpage
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/aggstab_comparison.png} 
+    \caption{Comparisons of aggregate stability indices between treatments and unamended control soil plots}
+    \label{fig:aggstab_comparison}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/C14C_comparison.png} 
+    \caption{Comparisons of carbon concentrations and radiocarbon signatures of soil organic matter pools between treatments and unamended control soil plots}
+    \label{fig:C14C_comparison}
+\end{figure}
+
+\newpage
+
+% density and pair plots SoilR modeled pars 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/pairs_plot_control.png} 
+    \caption{Pairs and density plots of modeled SoilR parameters for control soil}
+    \label{fig:pairs_plot_control}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/pairs_plot_Bolsdorfer.png} 
+    \caption{Pairs and density plots of modeled SoilR parameters for control soil}
+    \label{fig:pairs_plot_Bolsdorfer}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/pairs_plot_Huhnerberg.png} 
+    \caption{Pairs and density plots of modeled SoilR parameters for control soil}
+    \label{fig:pairs_plot_Huhnerberg}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/pairs_plot_Eifelgold.png} 
+    \caption{Pairs and density plots of modeled SoilR parameters for control soil}
+    \label{fig:pairs_plot_Eifelgold}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/pairs_plot_Lime.png} 
+    \caption{Pairs and density plots of modeled SoilR parameters for control soil}
+    \label{fig:pairs_plot_Lime}
+\end{figure}
+
+\newpage
+
+% trace plots SoilR modeled pars
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/convergence_plot_control.png} 
+    \caption{Pairs and density plots of modeled SoilR parameters for control soil}
+    \label{fig:convergence_plot_control}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/convergence_plot_Bolsdorfer.png} 
+    \caption{Pairs and density plots of modeled SoilR parameters for control soil}
+    \label{fig:convergence_plot_Bolsdorfer}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/convergence_plot_Huhnerberg.png} 
+    \caption{Pairs and density plots of modeled SoilR parameters for control soil}
+    \label{fig:convergence_plot_Huhnerberg}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/convergence_plot_Eifelgold.png} 
+    \caption{Pairs and density plots of modeled SoilR parameters for control soil}
+    \label{fig:convergence_plot_Eifelgold}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/convergence_plot_Lime.png} 
+    \caption{Pairs and density plots of modeled SoilR parameters for control soil}
+    \label{fig:convergence_plot_Lime}
+\end{figure}
+
+\newpage
+  
+% posterior distributions of modeled SoilR pars
+  
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/plot_log_age_tt_control.png} 
+    \caption{Posterior distributions of modeled soil organic matter pool ages and transit times in control soil}
+    \label{fig:plot_log_age_tt_control}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/plot_log_age_tt_Bolsdorfer.png} 
+    \caption{Posterior distributions of modeled soil organic matter pool ages and transit times in soil amended with Bolsdorfer basalt}
+    \label{fig:plot_log_age_tt_Bolsdorfer}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/plot_log_age_tt_Huhnerberg.png} 
+    \caption{Posterior distributions of modeled soil organic matter pool ages and transit times in soil amended with Huhnerberg basalt}
+    \label{fig:plot_log_age_tt_Huhnerberg}
+\end{figure}
+
+\newpage
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/plot_log_age_tt_Eifelgold.png} 
+    \caption{Posterior distributions of modeled soil organic matter pool ages and transit times in soil amended with Eifelgold tephrite}
+    \label{fig:plot_log_age_tt_Eifelgold}
+\end{figure}
+
+
+\newpage
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/plot_log_age_tt_Lime.png} 
+    \caption{Posterior distributions of modeled soil organic matter pool ages and transit times in soil amended with lime}
+    \label{fig:plot_log_age_tt_Lime}
+\end{figure}
+
+
 
 \end{document}
