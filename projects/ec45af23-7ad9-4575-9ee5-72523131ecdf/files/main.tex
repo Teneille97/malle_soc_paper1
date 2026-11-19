@@ -214,51 +214,45 @@ The FeDCB/Fe total ratio relates total pedogenetically transformed Fe phases ext
 The mean weight diameter (MWD) was calculated by multiplying the proportion of aggregates in each size class by the midpoint diameter of that class and summing across size classes. The geometric mean diameter (GMD) was calculated using a logarithmic weighting of the aggregate size classes. The fractal dimension (D) was calculated from the slope of the relationship between log cumulative aggregate mass and log normalized sieve diameter. The H$_2$O extract represents the baseline aggregate stability measurement. Comparisons of MWD, GMD and D between treatments under H$_2$O extraction were used to assess treatment effects on aggregate stability. Oxalate:H$_2$O ratios were calculated for MWD, GMD and D to express the aggregate stability index following oxalate extraction relative to the H$_2$O baseline.
 
 \subsubsection{ATR-FTIR spectral data processing}
-ATR-FTIR spectra were processed in R. Individual spectra were imported and associated with their respective soil sample identifiers and replicate measurements. Baseline correction was performed using the asymmetric least squares (ALS) algorithm implemented in the \texttt{baseline} package. Following baseline correction, spectra were restricted to the 800--3000 cm$^{-1}$ region to focus on the principal organic functional group absorption bands and relevant mineral-associated vibrations. Each spectrum was subsequently vector-normalised using its Euclidean (L2) norm to account for differences in overall spectral intensity and facilitate comparison of relative band contributions between samples. Normalisation was performed as:
-
-\begin{equation}
-A_{\mathrm{norm},i} =
-\frac{A_{\mathrm{corr},i}}
-{\sqrt{\displaystyle\sum_{j=1}^{n} A_{\mathrm{corr},j}^{2}}}
-\label{eq:ftir_vector_normalisation}
-\end{equation}
-
-where $A_{\mathrm{norm},i}$ and $A_{\mathrm{corr},i}$ represent the normalised and baseline-corrected absorbance at wavenumber $i$, respectively, and $n$ represents the total number of spectral observations within the selected wavenumber range.
-
-Integrated spectral band areas were calculated for predefined wavenumber intervals associated with SOM functional groups and mineral components (Table~\ref{tab:ftir_bands}). Integration was performed using the trapezoidal numerical integration method, implemented in the \texttt{pracma} package in R. The integrated area for each spectral interval was calculated as:
-
-\begin{equation}
-A_{\mathrm{band}} =
-\int_{\nu_1}^{\nu_2}
-A_{\mathrm{norm}}(\nu),d\nu
-\label{eq:ftir_band_integration}
-\end{equation}
-
-where $A_{\mathrm{norm}}(\nu)$ represents the vector-normalised absorbance at wavenumber $\nu$, and $\nu_1$ and $\nu_2$ represent the lower and upper boundaries of the respective spectral interval. The integration intervals included symmetric and asymmetric carboxylate stretching (1380--1425 and 1580--1650 cm$^{-1}$, respectively), aliphatic C--H stretching (2839--2870 and 2898--2976 cm$^{-1}$), aromatic C=C stretching (1500--1550 cm$^{-1}$), and the broader carbonyl-associated region (1570--1710 cm$^{-1}$). Additional integrations were performed for silicate (1000--1120 cm$^{-1}$), poorly crystalline silicate (950--1050 cm$^{-1}$), carbonate bending (870--880 cm$^{-1}$), carbonate stretching (1415--1480 cm$^{-1}$) and polysaccharide-associated vibrations (1030--1080 cm$^{-1}$).
-
-For each soil sample, integrated band areas were averaged across the three replicate measurements. Combined indicators were calculated by summing the integrated areas of the two aliphatic C--H intervals to obtain total aliphatic absorbance, and the symmetric and asymmetric carboxylate intervals to obtain total carboxylate absorbance. Changes in four principal functional-group indicators (total carboxylate, carbonyl-associated, aromatic and total aliphatic absorbance) were subsequently evaluated between untreated soils and NH$_4$OAc-extracted residues.
-
-Extraction-induced changes were expressed as percentage differences relative to the corresponding untreated soil:
-
-\begin{equation}
-\Delta A_{\mathrm{band}} (%) =
-\frac{
-A_{\mathrm{band,after}} -
-A_{\mathrm{band,before}}
-}{
-A_{\mathrm{band,before}}
-}
-\times 100
-\label{eq:ftir_percentage_change}
-\end{equation}
-
-where $A_{\mathrm{band,before}}$ and $A_{\mathrm{band,after}}$ represent the mean integrated band areas of the untreated soil and NH$_4$OAc-extracted residue, respectively. Negative values indicated a decrease in the relative contribution of a functional-group-associated spectral region following extraction, whereas positive values indicated an increase. 
-
+ATR-FTIR spectra were baseline-corrected via asymmetric least squares, cropped to 800–3000 cm$^{-1}$, vector-normalised, and integrated across target organic and mineral wavenumber intervals in R to quantify relative functional-group changes between untreated soils and NH$_4$OAc-extracted residues. Further methodological details, band definitions, and equations are provided in Supplementary Methods.
+  
 \subsubsection{Soil organic matter compartmental modelling}
-SOC turnover was represented with a three-pool fPOM--oPOM--MAOM model. Model structure, parameterization, priors, sampling and derived age and transit-time calculations are detailed in Supplementary Methods.
+To quantify carbon turnover rates, transfer efficiencies, and age distributions across SOM pools for each treatment (Control, Bolsdorfer, Lime, H\"{u}hnerberg, and Eifelgold), we fitted a three-pool sequential compartmental model with first-order linear kinetics using the \texttt{SoilR} package \citep{Sierra2012, Sierra2014} in \texttt{R} \citep{RCoreTeam2025}. The three modeled pools corresponded directly to the isolated physical fractions: fPOM, oPOM and MAOM.
+
+The temporal evolution of carbon stocks $\mathbf{C}(t) = [C_{\text{fPOM}}(t),\, C_{\text{oPOM}}(t),\, C_{\text{MAOM}}(t)]^{\top}$ ($\text{g\,C\,m}^{-2}$) and their radiocarbon signatures from $2023$ to $2026$ (evaluated at monthly time steps, $\Delta t = 1/12\,\text{yr}$) was governed by the linear autonomous system:
+
+\begin{equation}
+\frac{d\mathbf{C}(t)}{dt} = \mathbf{I} + \mathbf{A}\mathbf{C}(t)
+\end{equation}
+
+where $\mathbf{I} = [I_0,\, 0,\, 0]^{\top}$ represents annual plant carbon inputs entering exclusively into the $\text{fPOM}$ pool ($I_0 = 100\,\text{g\,C\,m}^{-2}\,\text{yr}^{-1}$), and $\mathbf{A}$ is the compartmental transfer matrix:
+
+\begin{equation}
+\mathbf{A} = \begin{pmatrix}
+-k_{\text{f}} & 0 & 0 \\
+\alpha_{21} k_{\text{f}} & -k_{\text{i}} & 0 \\
+0 & \alpha_{32} k_{\text{i}} & -k_{\text{s}}
+\end{pmatrix}
+\end{equation}
+
+Here, $k_{\text{f}}$, $k_{\text{i}}$, and $k_{\text{s}}$ ($\text{yr}^{-1}$) denote the decomposition rate constants of the $\text{fPOM}$, $\text{oPOM}$, and $\text{MAOM}$ pools, respectively, while $\alpha_{21}$ and $\alpha_{32}$ represent the dimensionless transfer coefficients governing carbon fluxes from $\text{fPOM}$ to $\text{oPOM}$ and from $\text{oPOM}$ to $\text{MAOM}$, respectively.
+
+Initial pool sizes $\mathbf{C}(2023)$ and initial radiocarbon signatures $\Delta^{14}\text{C}(2023)$ were parameterized using the shared $2023$ baseline observations across all plots, paired with treatment-specific bulk densities for subsequent sampling years. Atmospheric $\Delta^{14}\text{C}$ forcing for Northern Hemisphere Zone 1 was constructed by combining the empirical compilation of Hua et al. (2022) \citep{Hua2022} with projected atmospheric $\Delta^{14}\text{C}$ values for $2020\text{--}2026$. Annual carbon inputs were fixed at 100 g C m$^{-2}$ based on preliminary model runs and literature values \citep{Ven2020}.
+
+Model parameter estimation was performed independently for each treatment using the \texttt{FME} package \citep{Soetaert2010}. First, optimal starting parameters were obtained via Nelder--Mead simplex optimization (\texttt{modFit}) by minimizing the weighted sum of squared residuals across eight observational data streams: carbon stocks ($\text{g\,C\,m}^{-2}$) and $\Delta^{14}\text{C}$ ($\text{\textperthousand}$) for bulk soil, $\text{fPOM}$, $\text{oPOM}$, and $\text{MAOM}$, each weighted by its respective empirical standard deviation (with missing or zero standard deviations imputed using the median observed standard deviation for that variable). Parameter bounds were constrained to $k_{\text{f}} \in [0.05, 1.5]\,\text{yr}^{-1}$, $k_{\text{i}} \in [0.005, 0.5]\,\text{yr}^{-1}$, $k_{\text{s}} \in [0.0001, 0.05]\,\text{yr}^{-1}$, $\alpha_{21} \in [0, 0.5]$, and $\alpha_{32} \in [0, 0.1]$.
+
+To quantify parameter and predictive uncertainty, Markov Chain Monte Carlo (MCMC) sampling was conducted using the adaptive Metropolis algorithm (\texttt{modMCMC}) initialized at the Nelder--Mead optimum, running for $50{,}000$ iterations with covariance matrix adaptation every $1{,}000$ iterations \citep{Soetaert2010}. Posterior predictive $95\%$ credible intervals for pool carbon stocks and $\Delta^{14}\text{C}$ trajectories were derived from $500$ random draws from the posterior parameter chains.
+
+Following parameter calibration, probability density functions of system age (the age of carbon stored within individual pools and the bulk soil) and transit time (the time elapsed between carbon entry into $\text{fPOM}$ and its respiratory loss from the soil system) were computed over a $0\text{--}500\,\text{yr}$ horizon using the \texttt{systemAge} and \texttt{transitTime} functions in \texttt{SoilR} \citep{Sierra2017, Sierra2018}. Uncertainty envelopes ($95\%$ credible intervals) and summary metrics (mean and median ages and transit times) were derived from $700$ posterior parameter sets sampled after discarding the initial $20{,}000$ MCMC iterations as burn-in.
 
 \subsubsection{Integrated statistical models}
-Bayesian regression models related soil properties to C concentrations and $\Delta^{14}$C, and posterior correlations related geochemical indicators to modeled decomposition and transfer parameters. Model selection, diagnostics and implementation details are provided in Supplementary Methods.
+Bayesian treatment effects on soil geochemical properties (aggregate stability indices, extractable cation ratios, physicochemical properties, and FTIR spectral shifts) were evaluated using separate regression models fitted in Stan via \texttt{cmdstanr}. Standardized response variables were modelled as a function of treatment using a Student-$t$ likelihood (4 degrees of freedom), regularizing normal priors ($\mu \sim \mathcal{N}(0,1)$) for treatment-specific parameters, and a half-Student-$t$ prior for the residual standard deviation. Models were fitted using four MCMC chains, each with 2000 warm-up and 2000 sampling iterations. Treatment effects were quantified as posterior contrasts against the untreated Control for Lime, Hühnerberg, Eifelgold, and Bolsdorfer (the latter three at 50 t ha$^{-1}$). For carbon decomposition rates, transfer coefficients, and persistence metrics, posterior samples were obtained from the previously fitted three-pool SoilR models, retaining 1000 draws per treatment after excluding the first 20,000 iterations as burn-in. Evaluated parameters included pool-specific decomposition rates ($k_f$, $k_i$, and $k_s$), transfer coefficients ($\alpha_{fi}$ and $\alpha_{is}$), and the mean ages of fPOM, oPOM, and MAOM and whole-system transit time, derived using \texttt{systemAge()} and \texttt{transitTime()}, respectively, with a mean carbon input of 100 and an age grid of 0--500 years. For all responses, treatment--Control contrasts were calculated from independently sampled posterior distributions, using 10,000 differences per comparison. Posterior medians, 95\% credible intervals (CrI; 2.5th and 97.5th percentiles), and probabilities of positive and negative effects were calculated. For soil geochemical properties, contrasts were reported in both standardized and original measurement units. Effects were considered supported when the 95\% CrI excluded zero, and results were visualized using forest plots of treatment--Control differences.
+
+Associations between soil geochemical parameters and SoilR-derived decomposition rates, transfer coefficients, pool ages, and system transit time were investigated by performing correlation analyses across the treatment-level observations. Correlations were calculated using posterior draws to propagate uncertainty in the fitted SoilR parameters and derived persistence metrics. Spearman correlation coefficients were summarised using their posterior means, medians, standard deviations, and 95\% uncertainty intervals. 
+
+To identify the primary geochemical and spectroscopic drivers of soil organic carbon concentrations and $\Delta^{14}\text{C}$ across bulk soil and isolated density fractions ($\text{MAOM}$, $\text{oPOM}$, and $\text{fPOM}$), we fitted eight separate regularized Bayesian Gaussian multiple linear regression models using \texttt{cmdstanr} \citep{Carpenter2017, Gabry2025}. Candidate predictors were filtered to retain variables with $\ge 70\%$ completeness, median-imputed, and pruned to reduce severe multicollinearity ($|r| > 0.95$). Both predictors and response variables were standardized ($z$-scored) prior to fitting.
+
+Each reference model was specified in Stan with weakly informative priors ($\alpha \sim \mathcal{N}(0, 1)$, $\beta_j \sim \mathcal{N}(0, 0.5)$, and $\sigma \sim \text{Exponential}(1)$) and sampled using four Hamiltonian Monte Carlo chains ($1{,}500$ warmup and $2{,}000$ sampling iterations per chain). Parsimonious submodels were then selected via Bayesian projection predictive variable selection in the \texttt{projpred} package \citep{Piironen2020, Catalina2022}, applying forward selection (up to $10$ terms) evaluated by Pareto-smoothed importance sampling leave-one-out cross-validation (PSIS-LOO) \citep{Vehtari2017}. Using the one-standard-error parsimony criterion ($\alpha = 0.32$), we retained the smallest submodel whose expected log predictive density (ELPD) remained within one standard error of the full reference model, and refitted each selected model in Stan to obtain final posterior parameter estimates and relative predictor importance. Posterior mean residuals and their 95\% credible intervals were plotted against each predictor to assess potential non-linear relationships.
 
 \section{Results}
 \label{sec:results}
@@ -607,6 +601,47 @@ Attenuated total reflectance Fourier-transform infrared (ATR-FTIR) spectroscopy 
 
 ATR-FTIR spectra were acquired from the untreated soils and corresponding NH$_4$OAc-extracted residues to evaluate changes in organic functional groups following cation extraction. Spectra were recorded in absorbance mode over a wavenumber range of 400--4000 cm$^{-1}$, using 64 scans per measurement and a spectral resolution of 4 cm$^{-1}$. Spectral measurements were exported as individual data files for subsequent processing and comparison of the untreated soils and extracted residues.
 
+ATR-FTIR spectra were processed in R. Individual spectra were imported and associated with their respective soil sample identifiers and replicate measurements. Baseline correction was performed using the asymmetric least squares (ALS) algorithm implemented in the \texttt{baseline} package. Following baseline correction, spectra were restricted to the 800--3000 cm$^{-1}$ region to focus on the principal organic functional group absorption bands and relevant mineral-associated vibrations. Each spectrum was subsequently vector-normalised using its Euclidean (L2) norm to account for differences in overall spectral intensity and facilitate comparison of relative band contributions between samples. Normalisation was performed as:
+
+\begin{equation}
+A_{\mathrm{norm},i} =
+\frac{A_{\mathrm{corr},i}}
+{\sqrt{\displaystyle\sum_{j=1}^{n} A_{\mathrm{corr},j}^{2}}}
+\label{eq:ftir_vector_normalisation}
+\end{equation}
+
+where $A_{\mathrm{norm},i}$ and $A_{\mathrm{corr},i}$ represent the normalised and baseline-corrected absorbance at wavenumber $i$, respectively, and $n$ represents the total number of spectral observations within the selected wavenumber range.
+
+Integrated spectral band areas were calculated for predefined wavenumber intervals associated with SOM functional groups and mineral components (Table~\ref{tab:ftir_bands}). Integration was performed using the trapezoidal numerical integration method, implemented in the \texttt{pracma} package in R. The integrated area for each spectral interval was calculated as:
+
+\begin{equation}
+A_{\mathrm{band}} =
+\int_{\nu_1}^{\nu_2}
+A_{\mathrm{norm}}(\nu),d\nu
+\label{eq:ftir_band_integration}
+\end{equation}
+
+where $A_{\mathrm{norm}}(\nu)$ represents the vector-normalised absorbance at wavenumber $\nu$, and $\nu_1$ and $\nu_2$ represent the lower and upper boundaries of the respective spectral interval. The integration intervals included symmetric and asymmetric carboxylate stretching (1380--1425 and 1580--1650 cm$^{-1}$, respectively), aliphatic C--H stretching (2839--2870 and 2898--2976 cm$^{-1}$), aromatic C=C stretching (1500--1550 cm$^{-1}$), and the broader carbonyl-associated region (1570--1710 cm$^{-1}$). Additional integrations were performed for silicate (1000--1120 cm$^{-1}$), poorly crystalline silicate (950--1050 cm$^{-1}$), carbonate bending (870--880 cm$^{-1}$), carbonate stretching (1415--1480 cm$^{-1}$) and polysaccharide-associated vibrations (1030--1080 cm$^{-1}$).
+
+For each soil sample, integrated band areas were averaged across the three replicate measurements. Combined indicators were calculated by summing the integrated areas of the two aliphatic C--H intervals to obtain total aliphatic absorbance, and the symmetric and asymmetric carboxylate intervals to obtain total carboxylate absorbance. Changes in four principal functional-group indicators (total carboxylate, carbonyl-associated, aromatic and total aliphatic absorbance) were subsequently evaluated between untreated soils and NH$_4$OAc-extracted residues.
+
+Extraction-induced changes were expressed as percentage differences relative to the corresponding untreated soil:
+
+\begin{equation}
+\Delta A_{\mathrm{band}} (%) =
+\frac{
+A_{\mathrm{band,after}} -
+A_{\mathrm{band,before}}
+}{
+A_{\mathrm{band,before}}
+}
+\times 100
+\label{eq:ftir_percentage_change}
+\end{equation}
+
+where $A_{\mathrm{band,before}}$ and $A_{\mathrm{band,after}}$ represent the mean integrated band areas of the untreated soil and NH$_4$OAc-extracted residue, respectively. Negative values indicated a decrease in the relative contribution of a functional-group-associated spectral region following extraction, whereas positive values indicated an increase. 
+
+
 \subsubsection{Sequential cation extractions}
 
 Sequential chemical extractions were performed on soil samples in triplicate following the modified Tessier procedure \citep{Tessier1979}, as described by Steinwidder et al. (2025). The procedure sequentially targeted exchangeable, carbonate-bound, reducible (Fe/Mn (hydr)oxides), and oxidizable (organic matter-associated) elemental fractions using increasingly aggressive extractants. Following each extraction step, samples were centrifuged (8 min at 4500 rpm) and the supernatant was filtered (0.45 $\mu$m) for quantitative analysis. The remaining soil residues were washed with distilled water before proceeding to the next extraction step. To account for residual water entrained in the soil pellets following washing, each centrifuge tube was weighed manually after discarding the supernatant. The mass difference was used to estimate the volume of entrained water, assuming a water density of 1 g mL\(^{-1}\), to correct for dilution of the extractant in the following extraction step.
@@ -617,44 +652,6 @@ Dithionite-citrate-bicarbonate (DCB) and acid oxalate extractions were performed
 Crystalline (DCB-extractable) oxide-associated elements were extracted following the Mehra and Jackson procedure \citep{Mehra1958}  at the Laboratory for Mineralogy and Petrology, Ghent University. Briefly, soil was treated with a sodium citrate-bicarbonate buffer and sodium dithionite as a reducing agent. The extraction was performed at 75 $\deg$ C, with repeated additions of sodium dithionite to promote the dissolution of free iron oxides and associated compounds. Following the addition of saturated potassium chloride, the suspension was centrifuged and the supernatant collected. The extraction was repeated, and the combined supernatants were brought to a known final volume for elemental analysis. 
 Non-crystalline (oxalate-extractable) oxide-associated elements in soil samples were measured in triplicate using an acid oxalate extraction. For this procedure, 0.7 g of soil was combined with 35 mL of 0.2 M oxalate extractant (pH 3) and shaken for 2 h in the dark to minimise light-induced reactions. Samples were subsequently centrifuged, and the supernatants filtered through 0.45 $\mu$m filters. Concentrations of Fe, Al, Mn and Si in the oxalate extracts were determined by ICP-OES.
 
-\subsubsection{Soil organic matter compartmental modelling}
-
-To quantify carbon turnover rates, transfer efficiencies, and age distributions across SOM pools for each treatment (Control, Bolsdorfer, Lime, H\"{u}hnerberg, and Eifelgold), we fitted a three-pool sequential compartmental model with first-order linear kinetics using the \texttt{SoilR} package \citep{Sierra2012, Sierra2014} in \texttt{R} \citep{RCoreTeam2025}. The three modeled pools corresponded directly to the isolated physical fractions: fPOM, oPOM and MAOM.
-
-The temporal evolution of carbon stocks $\mathbf{C}(t) = [C_{\text{fPOM}}(t),\, C_{\text{oPOM}}(t),\, C_{\text{MAOM}}(t)]^{\top}$ ($\text{g\,C\,m}^{-2}$) and their radiocarbon signatures from $2023$ to $2026$ (evaluated at monthly time steps, $\Delta t = 1/12\,\text{yr}$) was governed by the linear autonomous system:
-
-\begin{equation}
-\frac{d\mathbf{C}(t)}{dt} = \mathbf{I} + \mathbf{A}\mathbf{C}(t)
-\end{equation}
-
-where $\mathbf{I} = [I_0,\, 0,\, 0]^{\top}$ represents annual plant carbon inputs entering exclusively into the $\text{fPOM}$ pool ($I_0 = 100\,\text{g\,C\,m}^{-2}\,\text{yr}^{-1}$), and $\mathbf{A}$ is the compartmental transfer matrix:
-
-\begin{equation}
-\mathbf{A} = \begin{pmatrix}
--k_{\text{f}} & 0 & 0 \\
-\alpha_{21} k_{\text{f}} & -k_{\text{i}} & 0 \\
-0 & \alpha_{32} k_{\text{i}} & -k_{\text{s}}
-\end{pmatrix}
-\end{equation}
-
-Here, $k_{\text{f}}$, $k_{\text{i}}$, and $k_{\text{s}}$ ($\text{yr}^{-1}$) denote the decomposition rate constants of the $\text{fPOM}$, $\text{oPOM}$, and $\text{MAOM}$ pools, respectively, while $\alpha_{21}$ and $\alpha_{32}$ represent the dimensionless transfer coefficients governing carbon fluxes from $\text{fPOM}$ to $\text{oPOM}$ and from $\text{oPOM}$ to $\text{MAOM}$, respectively.
-
-Initial pool sizes $\mathbf{C}(2023)$ and initial radiocarbon signatures $\Delta^{14}\text{C}(2023)$ were parameterized using the shared $2023$ baseline observations across all plots, paired with treatment-specific bulk densities for subsequent sampling years. Atmospheric $\Delta^{14}\text{C}$ forcing for Northern Hemisphere Zone 1 was constructed by combining the empirical compilation of Hua et al. (2022) \citep{Hua2022} with projected atmospheric $\Delta^{14}\text{C}$ values for $2020\text{--}2026$. Annual carbon inputs were fixed at 100 g C m$^{-2}$ based on preliminary model runs and literature values \citep{Ven2020}.
-
-Model parameter estimation was performed independently for each treatment using the \texttt{FME} package \citep{Soetaert2010}. First, optimal starting parameters were obtained via Nelder--Mead simplex optimization (\texttt{modFit}) by minimizing the weighted sum of squared residuals across eight observational data streams: carbon stocks ($\text{g\,C\,m}^{-2}$) and $\Delta^{14}\text{C}$ ($\text{\textperthousand}$) for bulk soil, $\text{fPOM}$, $\text{oPOM}$, and $\text{MAOM}$, each weighted by its respective empirical standard deviation (with missing or zero standard deviations imputed using the median observed standard deviation for that variable). Parameter bounds were constrained to $k_{\text{f}} \in [0.05, 1.5]\,\text{yr}^{-1}$, $k_{\text{i}} \in [0.005, 0.5]\,\text{yr}^{-1}$, $k_{\text{s}} \in [0.0001, 0.05]\,\text{yr}^{-1}$, $\alpha_{21} \in [0, 0.5]$, and $\alpha_{32} \in [0, 0.1]$.
-
-To quantify parameter and predictive uncertainty, Markov Chain Monte Carlo (MCMC) sampling was conducted using the adaptive Metropolis algorithm (\texttt{modMCMC}) initialized at the Nelder--Mead optimum, running for $50{,}000$ iterations with covariance matrix adaptation every $1{,}000$ iterations \citep{Soetaert2010}. Posterior predictive $95\%$ credible intervals for pool carbon stocks and $\Delta^{14}\text{C}$ trajectories were derived from $500$ random draws from the posterior parameter chains.
-
-Following parameter calibration, probability density functions of system age (the age of carbon stored within individual pools and the bulk soil) and transit time (the time elapsed between carbon entry into $\text{fPOM}$ and its respiratory loss from the soil system) were computed over a $0\text{--}500\,\text{yr}$ horizon using the \texttt{systemAge} and \texttt{transitTime} functions in \texttt{SoilR} \citep{Sierra2017, Sierra2018}. Uncertainty envelopes ($95\%$ credible intervals) and summary metrics (mean and median ages and transit times) were derived from $700$ posterior parameter sets sampled after discarding the initial $20{,}000$ MCMC iterations as burn-in.
-
-\subsubsection{Integrated statistical models}
-Bayesian treatment effects on soil geochemical properties (aggregate stability indices, extractable cation ratios, physicochemical properties, and FTIR spectral shifts) were evaluated using separate regression models fitted in Stan via \texttt{cmdstanr}. Standardized response variables were modelled as a function of treatment using a Student-$t$ likelihood (4 degrees of freedom), regularizing normal priors ($\mu \sim \mathcal{N}(0,1)$) for treatment-specific parameters, and a half-Student-$t$ prior for the residual standard deviation. Models were fitted using four MCMC chains, each with 2000 warm-up and 2000 sampling iterations. Treatment effects were quantified as posterior contrasts against the untreated Control for Lime, Hühnerberg, Eifelgold, and Bolsdorfer (the latter three at 50 t ha$^{-1}$). For carbon decomposition rates, transfer coefficients, and persistence metrics, posterior samples were obtained from the previously fitted three-pool SoilR models, retaining 1000 draws per treatment after excluding the first 20,000 iterations as burn-in. Evaluated parameters included pool-specific decomposition rates ($k_f$, $k_i$, and $k_s$), transfer coefficients ($\alpha_{fi}$ and $\alpha_{is}$), and the mean ages of fPOM, oPOM, and MAOM and whole-system transit time, derived using \texttt{systemAge()} and \texttt{transitTime()}, respectively, with a mean carbon input of 100 and an age grid of 0--500 years. For all responses, treatment--Control contrasts were calculated from independently sampled posterior distributions, using 10,000 differences per comparison. Posterior medians, 95\% credible intervals (CrI; 2.5th and 97.5th percentiles), and probabilities of positive and negative effects were calculated. For soil geochemical properties, contrasts were reported in both standardized and original measurement units. Effects were considered supported when the 95\% CrI excluded zero, and results were visualized using forest plots of treatment--Control differences.
-
-Associations between soil geochemical parameters and SoilR-derived decomposition rates, transfer coefficients, pool ages, and system transit time were investigated by performing correlation analyses across the treatment-level observations. Correlations were calculated using posterior draws to propagate uncertainty in the fitted SoilR parameters and derived persistence metrics. Spearman correlation coefficients were summarised using their posterior means, medians, standard deviations, and 95\% uncertainty intervals. 
-
-To identify the primary geochemical and spectroscopic drivers of soil organic carbon concentrations and $\Delta^{14}\text{C}$ across bulk soil and isolated density fractions ($\text{MAOM}$, $\text{oPOM}$, and $\text{fPOM}$), we fitted eight separate regularized Bayesian Gaussian multiple linear regression models using \texttt{cmdstanr} \citep{Carpenter2017, Gabry2025}. Candidate predictors were filtered to retain variables with $\ge 70\%$ completeness, median-imputed, and pruned to reduce severe multicollinearity ($|r| > 0.95$). Both predictors and response variables were standardized ($z$-scored) prior to fitting.
-
-Each reference model was specified in Stan with weakly informative priors ($\alpha \sim \mathcal{N}(0, 1)$, $\beta_j \sim \mathcal{N}(0, 0.5)$, and $\sigma \sim \text{Exponential}(1)$) and sampled using four Hamiltonian Monte Carlo chains ($1{,}500$ warmup and $2{,}000$ sampling iterations per chain). Parsimonious submodels were then selected via Bayesian projection predictive variable selection in the \texttt{projpred} package \citep{Piironen2020, Catalina2022}, applying forward selection (up to $10$ terms) evaluated by Pareto-smoothed importance sampling leave-one-out cross-validation (PSIS-LOO) \citep{Vehtari2017}. Using the one-standard-error parsimony criterion ($\alpha = 0.32$), we retained the smallest submodel whose expected log predictive density (ELPD) remained within one standard error of the full reference model, and refitted each selected model in Stan to obtain final posterior parameter estimates and relative predictor importance. Posterior mean residuals and their 95\% credible intervals were plotted against each predictor to assess potential non-linear relationships.
 
 \subsubsection{Density fractionation and radiocarbon analysis}
 Soil organic matter was physically separated into three distinct density fractions - fPOM, oPOM and MAOM - using sequential density fractionation with sodium polytungstate (SPT; $\text{Na}_6[\text{H}_2\text{W}_{12}\text{O}_{40}]$, TC-Tungsten) adapted from established protocols \citep{Gaudinski2000, Crow2007}. To prevent modern carbon contamination prior to subsequent radiocarbon analysis, all glassware was pre-baked at 500 $\deg$ C, non-bakeable equipment was rinsed with acetone, and double-deionized water was used throughout the procedure.
