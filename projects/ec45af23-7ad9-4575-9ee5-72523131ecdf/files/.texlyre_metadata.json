@@ -1,80 +1,22 @@
 [
   {
-    "id": "-bkAu6FDsT0Jvdtbiiy8l",
-    "name": "graphicx.sty",
-    "path": "/.texlyre_cache/__tex/graphicx.sty",
-    "type": "file",
-    "createdAt": 1795101488824,
-    "lastModified": 1795101488824,
-    "size": 9067,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
     "id": "06RkZ7fxrlcxgLTRSv92X",
     "name": "main.tex",
     "path": "/main.tex",
     "type": "file",
     "createdAt": 1793882111461,
-    "lastModified": 1795101396319,
-    "size": 108127,
+    "lastModified": 1795103682969,
+    "size": 113402,
     "mimeType": "application/x-tex",
     "isBinary": false
   },
   {
-    "id": "0NoMHGwbgOTHsi_N1Adth",
-    "name": "cmex10.pfb",
-    "path": "/.texlyre_cache/__tex/cmex10.pfb",
-    "type": "file",
-    "createdAt": 1795101488982,
-    "lastModified": 1795101488982,
-    "size": 30251,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
-    "id": "0ew_4j2aTHPPHYeGm4I6S",
-    "name": "cmsy7.pfb",
-    "path": "/.texlyre_cache/__tex/cmsy7.pfb",
-    "type": "file",
-    "createdAt": 1795101488986,
-    "lastModified": 1795101488986,
-    "size": 32716,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
-    "id": "2H9jweSUvZ_oSTW_14f1q",
-    "name": "pd1enc.def",
-    "path": "/.texlyre_cache/__tex/pd1enc.def",
-    "type": "file",
-    "createdAt": 1795101488960,
-    "lastModified": 1795101488960,
-    "size": 14134,
-    "mimeType": "text/plain",
-    "isBinary": false
-  },
-  {
-    "id": "2sJeAPM8mlkCpXvB_RAC0",
-    "name": "color.sty",
-    "path": "/.texlyre_cache/__tex/color.sty",
-    "type": "file",
-    "createdAt": 1795101488966,
-    "lastModified": 1795101488966,
-    "size": 7107,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "3-HpSmpXf0GAo2jd2J4Ib",
-    "name": "main.pdf",
-    "path": "/.texlyre_src/__output/main.pdf",
-    "type": "file",
-    "createdAt": 1795101488705,
-    "lastModified": 1795101488705,
-    "size": 8512692,
-    "mimeType": "application/pdf",
-    "isBinary": true
+    "id": "2H5JmrLaO1y_IS0u-vNYP",
+    "name": "__work",
+    "path": "/.texlyre_src/__work",
+    "type": "directory",
+    "createdAt": 1795103696334,
+    "lastModified": 1795103696334
   },
   {
     "id": "3P6C96KZu_L60WphugYKV",
@@ -85,138 +27,6 @@
     "lastModified": 1795016672508,
     "size": 125686,
     "mimeType": "image/png",
-    "isBinary": true
-  },
-  {
-    "id": "3dnBO5xw7fDNGhbC64EWc",
-    "name": "threeparttable.sty",
-    "path": "/.texlyre_cache/__tex/threeparttable.sty",
-    "type": "file",
-    "createdAt": 1795101488927,
-    "lastModified": 1795101488927,
-    "size": 13506,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "3iXEJNqYhNYZYplXV9yCg",
-    "name": "pdfescape.sty",
-    "path": "/.texlyre_cache/__tex/pdfescape.sty",
-    "type": "file",
-    "createdAt": 1795101488958,
-    "lastModified": 1795101488958,
-    "size": 19007,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "3rVbbS7GAWI5xS4SR_FFT",
-    "name": "amsopn.sty",
-    "path": "/.texlyre_cache/__tex/amsopn.sty",
-    "type": "file",
-    "createdAt": 1795101488877,
-    "lastModified": 1795101488877,
-    "size": 4116,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "43pNf_jJi9nk8LlKmCmUb",
-    "name": "pdflscape.sty",
-    "path": "/.texlyre_cache/__tex/pdflscape.sty",
-    "type": "file",
-    "createdAt": 1795101488930,
-    "lastModified": 1795101488930,
-    "size": 6575,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "45d22YdvYttdregBVPsVp",
-    "name": "bitset.sty",
-    "path": "/.texlyre_cache/__tex/bitset.sty",
-    "type": "file",
-    "createdAt": 1795101488961,
-    "lastModified": 1795101488961,
-    "size": 33961,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "4mgTqgMK_0AXYoRBFgedG",
-    "name": "cmti10.tfm",
-    "path": "/.texlyre_cache/__tex/cmti10.tfm",
-    "type": "file",
-    "createdAt": 1795101488978,
-    "lastModified": 1795101488978,
-    "size": 1480,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "53t7YmQcgUdSeFKF-omSY",
-    "name": "xr.sty",
-    "path": "/.texlyre_cache/__tex/xr.sty",
-    "type": "file",
-    "createdAt": 1795101488964,
-    "lastModified": 1795101488964,
-    "size": 2563,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "5MZC7kTtcTX7yBVuljd6O",
-    "name": "cmti10.pfb",
-    "path": "/.texlyre_cache/__tex/cmti10.pfb",
-    "type": "file",
-    "createdAt": 1795101488986,
-    "lastModified": 1795101488986,
-    "size": 37944,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
-    "id": "6QiquwsID98a_Y3m9xA-Z",
-    "name": "rerunfilecheck.sty",
-    "path": "/.texlyre_cache/__tex/rerunfilecheck.sty",
-    "type": "file",
-    "createdAt": 1795101488963,
-    "lastModified": 1795101488963,
-    "size": 9715,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "7fxqr__UG_HZQ-l2Eq42W",
-    "name": "cmmi8.pfb",
-    "path": "/.texlyre_cache/__tex/cmmi8.pfb",
-    "type": "file",
-    "createdAt": 1795101488983,
-    "lastModified": 1795101488983,
-    "size": 35469,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
-    "id": "8DN5YW2yL8ob0O8HmW550",
-    "name": "mathtools.sty",
-    "path": "/.texlyre_cache/__tex/mathtools.sty",
-    "type": "file",
-    "createdAt": 1795101488915,
-    "lastModified": 1795101488915,
-    "size": 55081,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "8Ihm3hk-LqliTHwYBYH3m",
-    "name": "cmmi6.tfm",
-    "path": "/.texlyre_cache/__tex/cmmi6.tfm",
-    "type": "file",
-    "createdAt": 1795101488969,
-    "lastModified": 1795101488969,
-    "size": 1512,
-    "mimeType": "application/x-tex-tfm",
     "isBinary": true
   },
   {
@@ -231,147 +41,20 @@
     "isBinary": true
   },
   {
-    "id": "91fxVMuBqO_PllbJ3RW1G",
-    "name": "msam10.tfm",
-    "path": "/.texlyre_cache/__tex/msam10.tfm",
-    "type": "file",
-    "createdAt": 1795101488972,
-    "lastModified": 1795101488972,
-    "size": 916,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
+    "id": "9PWOB1Fbf555J6PksMtt5",
+    "name": "__dvi",
+    "path": "/.texlyre_cache/__dvi",
+    "type": "directory",
+    "createdAt": 1795103696335,
+    "lastModified": 1795103696335
   },
   {
-    "id": "A1TJ_g2lwnY7M3bKIx-fm",
-    "name": "cmss10.tfm",
-    "path": "/.texlyre_cache/__tex/cmss10.tfm",
-    "type": "file",
-    "createdAt": 1795101488977,
-    "lastModified": 1795101488977,
-    "size": 1316,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "AOV6tjiT5vu4DMFWwchdv",
-    "name": "cmmi12.pfb",
-    "path": "/.texlyre_cache/__tex/cmmi12.pfb",
-    "type": "file",
-    "createdAt": 1795101488982,
-    "lastModified": 1795101488982,
-    "size": 36741,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
-    "id": "AaqvqnFRNBLTRF92jat0f",
-    "name": "article.cls",
-    "path": "/.texlyre_cache/__tex/article.cls",
-    "type": "file",
-    "createdAt": 1795101488809,
-    "lastModified": 1795101488809,
-    "size": 20023,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "AgnTPKcWTmouBn-2ZWIp_",
-    "name": "amsgen.sty",
-    "path": "/.texlyre_cache/__tex/amsgen.sty",
-    "type": "file",
-    "createdAt": 1795101488846,
-    "lastModified": 1795101488846,
-    "size": 4161,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "AsGzhnlmN1bHgzcXccBeW",
-    "name": "cmss8.tfm",
-    "path": "/.texlyre_cache/__tex/cmss8.tfm",
-    "type": "file",
-    "createdAt": 1795101488975,
-    "lastModified": 1795101488975,
-    "size": 1296,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "B4kJYjl8qeHPjI2sSLMMJ",
-    "name": "caption.sty",
-    "path": "/.texlyre_cache/__tex/caption.sty",
-    "type": "file",
-    "createdAt": 1795101488921,
-    "lastModified": 1795101488921,
-    "size": 57350,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "BBVRXI98MWUMMVHPCyjxR",
-    "name": "cmbx12.tfm",
-    "path": "/.texlyre_cache/__tex/cmbx12.tfm",
-    "type": "file",
-    "createdAt": 1795101488976,
-    "lastModified": 1795101488976,
-    "size": 1324,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "BO6k9gpssNsybWszaeRLx",
-    "name": "lineno.sty",
-    "path": "/.texlyre_cache/__tex/lineno.sty",
-    "type": "file",
-    "createdAt": 1795101488954,
-    "lastModified": 1795101488954,
-    "size": 151738,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "BvPMxU-fTHbU39N5q781G",
-    "name": "supp-pdf.mkii",
-    "path": "/.texlyre_cache/__tex/supp-pdf.mkii",
-    "type": "file",
-    "createdAt": 1795101488964,
-    "lastModified": 1795101488964,
-    "size": 71627,
-    "mimeType": "application/octet-stream",
-    "isBinary": true
-  },
-  {
-    "id": "C78wXV0bWVDJ8tl7i1HC8",
-    "name": "pdftexcmds.sty",
-    "path": "/.texlyre_cache/__tex/pdftexcmds.sty",
-    "type": "file",
-    "createdAt": 1795101488956,
-    "lastModified": 1795101488956,
-    "size": 19963,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "CIMZ4iXkgiubITsHfP5zO",
-    "name": "cmbx10.pfb",
-    "path": "/.texlyre_cache/__tex/cmbx10.pfb",
-    "type": "file",
-    "createdAt": 1795101488982,
-    "lastModified": 1795101488982,
-    "size": 34811,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
-    "id": "Cgjml_ki6na0gY8GJSpaD",
-    "name": "cmr6.tfm",
-    "path": "/.texlyre_cache/__tex/cmr6.tfm",
-    "type": "file",
-    "createdAt": 1795101488968,
-    "lastModified": 1795101488968,
-    "size": 1300,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
+    "id": "C6-jw5DgHWYFI2FIttUcK",
+    "name": ".texlyre_src",
+    "path": "/.texlyre_src",
+    "type": "directory",
+    "createdAt": 1795103696332,
+    "lastModified": 1795103696332
   },
   {
     "id": "CvH8vHE3vHYpKPZ6oMa7A",
@@ -385,61 +68,6 @@
     "isBinary": true
   },
   {
-    "id": "Cy4lKtb0umWTni_4LIyFs",
-    "name": "longtable.sty",
-    "path": "/.texlyre_cache/__tex/longtable.sty",
-    "type": "file",
-    "createdAt": 1795101488988,
-    "lastModified": 1795101488988,
-    "size": 12133,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "D7DWhvjIXvgMMq9JKd9u4",
-    "name": "size12.clo",
-    "path": "/.texlyre_cache/__tex/size12.clo",
-    "type": "file",
-    "createdAt": 1795101488814,
-    "lastModified": 1795101488814,
-    "size": 8447,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "D_1Vi2sM0NGUituuOuBuJ",
-    "name": "cmti7.pfb",
-    "path": "/.texlyre_cache/__tex/cmti7.pfb",
-    "type": "file",
-    "createdAt": 1795101488987,
-    "lastModified": 1795101488987,
-    "size": 36607,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
-    "id": "DnA-XFiiDzvVHscMA-cSm",
-    "name": "swiftlatexpdftex.fmt",
-    "path": "/.texlyre_cache/__tex/swiftlatexpdftex.fmt",
-    "type": "file",
-    "createdAt": 1795101488805,
-    "lastModified": 1795101488805,
-    "size": 10360227,
-    "mimeType": "application/octet-stream",
-    "isBinary": true
-  },
-  {
-    "id": "EolEQWzFzXx-NjlB7tKde",
-    "name": "booktabs.sty",
-    "path": "/.texlyre_cache/__tex/booktabs.sty",
-    "type": "file",
-    "createdAt": 1795101488923,
-    "lastModified": 1795101488923,
-    "size": 6078,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
     "id": "FMVpyB_1W9Y58K3oT605L",
     "name": "plot_log_age_tt_Eifelgold.png",
     "path": "/figures/plot_log_age_tt_Eifelgold.png",
@@ -449,17 +77,6 @@
     "size": 125107,
     "mimeType": "image/png",
     "isBinary": true
-  },
-  {
-    "id": "FP-iFIdjFBgik0j_EAN-H",
-    "name": "lscape.sty",
-    "path": "/.texlyre_cache/__tex/lscape.sty",
-    "type": "file",
-    "createdAt": 1795101488931,
-    "lastModified": 1795101488931,
-    "size": 1753,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
   },
   {
     "id": "FnebM74YGt0H_VY4-BPAK",
@@ -484,39 +101,6 @@
     "isBinary": true
   },
   {
-    "id": "Gow4d4XxSYIZ66vqyUnjK",
-    "name": "amsfonts.sty",
-    "path": "/.texlyre_cache/__tex/amsfonts.sty",
-    "type": "file",
-    "createdAt": 1795101488909,
-    "lastModified": 1795101488909,
-    "size": 5949,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "GsVYu4Qm3y4cHli7HOpfD",
-    "name": "sfrm1200.pfb",
-    "path": "/.texlyre_cache/__tex/sfrm1200.pfb",
-    "type": "file",
-    "createdAt": 1795101488988,
-    "lastModified": 1795101488988,
-    "size": 136101,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
-    "id": "GvMXzJW50vag5pA-fHFoG",
-    "name": "cmmi10.tfm",
-    "path": "/.texlyre_cache/__tex/cmmi10.tfm",
-    "type": "file",
-    "createdAt": 1795101488980,
-    "lastModified": 1795101488980,
-    "size": 1528,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
     "id": "H26tvMjpdBgRK3LvGksKc",
     "name": "pairs_plot_Lime.png",
     "path": "/figures/pairs_plot_Lime.png",
@@ -526,25 +110,6 @@
     "size": 178073,
     "mimeType": "image/png",
     "isBinary": true
-  },
-  {
-    "id": "HAt1YoLEOBxNG5xqaj3pp",
-    "name": "mt-cmr.cfg",
-    "path": "/.texlyre_cache/__tex/mt-cmr.cfg",
-    "type": "file",
-    "createdAt": 1795101488965,
-    "lastModified": 1795101488965,
-    "size": 22870,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "HfxhKKEhlN2DMrXxfZb2U",
-    "name": "__tex",
-    "path": "/.texlyre_cache/__tex",
-    "type": "directory",
-    "createdAt": 1795101488699,
-    "lastModified": 1795101488699
   },
   {
     "id": "I0Wm-DfC9s26mMHrKTvFj",
@@ -569,28 +134,6 @@
     "isBinary": true
   },
   {
-    "id": "JdHuDBPGv7CycwVxrbO-6",
-    "name": "color.cfg",
-    "path": "/.texlyre_cache/__tex/color.cfg",
-    "type": "file",
-    "createdAt": 1795101488966,
-    "lastModified": 1795101488966,
-    "size": 1213,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "JdP9aMA3u1wehb4fLoVne",
-    "name": "pdftex.map",
-    "path": "/.texlyre_cache/__tex/pdftex.map",
-    "type": "file",
-    "createdAt": 1795101488979,
-    "lastModified": 1795101488979,
-    "size": 4770781,
-    "mimeType": "application/json",
-    "isBinary": false
-  },
-  {
     "id": "JyUy9Xuwtvxu1U2yebfvs",
     "name": "pairs_plot_Bolsdorfer.png",
     "path": "/figures/pairs_plot_Bolsdorfer.png",
@@ -599,17 +142,6 @@
     "lastModified": 1795016156796,
     "size": 163337,
     "mimeType": "image/png",
-    "isBinary": true
-  },
-  {
-    "id": "K9RaKdZGwbj1uEYnNga7p",
-    "name": "cmbx7.tfm",
-    "path": "/.texlyre_cache/__tex/cmbx7.tfm",
-    "type": "file",
-    "createdAt": 1795101488981,
-    "lastModified": 1795101488981,
-    "size": 1336,
-    "mimeType": "application/x-tex-tfm",
     "isBinary": true
   },
   {
@@ -646,61 +178,6 @@
     "isBinary": true
   },
   {
-    "id": "Ke9FVC72x-9_QS3GXKIMD",
-    "name": "cmr7.pfb",
-    "path": "/.texlyre_cache/__tex/cmr7.pfb",
-    "type": "file",
-    "createdAt": 1795101488990,
-    "lastModified": 1795101488990,
-    "size": 32762,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
-    "id": "L0OcWcRWEKJmudJnemMDI",
-    "name": "multirow.sty",
-    "path": "/.texlyre_cache/__tex/multirow.sty",
-    "type": "file",
-    "createdAt": 1795101488927,
-    "lastModified": 1795101488927,
-    "size": 5486,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "L7LfQax_bC79Xi0EeBPFY",
-    "name": "amstext.sty",
-    "path": "/.texlyre_cache/__tex/amstext.sty",
-    "type": "file",
-    "createdAt": 1795101488844,
-    "lastModified": 1795101488844,
-    "size": 2432,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "LCvP73cWgSWIMBI8x73pV",
-    "name": "mhsetup.sty",
-    "path": "/.texlyre_cache/__tex/mhsetup.sty",
-    "type": "file",
-    "createdAt": 1795101488917,
-    "lastModified": 1795101488917,
-    "size": 5317,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "LRP_e43PgWCjXa7XsiLQQ",
-    "name": "xparse.sty",
-    "path": "/.texlyre_cache/__tex/xparse.sty",
-    "type": "file",
-    "createdAt": 1795101488934,
-    "lastModified": 1795101488934,
-    "size": 81717,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
     "id": "LdcwWaIUze3-Ovo6VDU95",
     "name": "posterior_residuals_faceted_d14C_2026_fPOM.png",
     "path": "/figures/posterior_residuals_faceted_d14C_2026_fPOM.png",
@@ -709,61 +186,6 @@
     "lastModified": 1795082500664,
     "size": 413824,
     "mimeType": "image/png",
-    "isBinary": true
-  },
-  {
-    "id": "LenFaCmIrc2UxrG99DK9b",
-    "name": "cm-super-ts1.enc",
-    "path": "/.texlyre_cache/__tex/cm-super-ts1.enc",
-    "type": "file",
-    "createdAt": 1795101488981,
-    "lastModified": 1795101488981,
-    "size": 2900,
-    "mimeType": "application/octet-stream",
-    "isBinary": true
-  },
-  {
-    "id": "Li5lzE0evL0T8ReqgKuur",
-    "name": "cmti12.tfm",
-    "path": "/.texlyre_cache/__tex/cmti12.tfm",
-    "type": "file",
-    "createdAt": 1795101488976,
-    "lastModified": 1795101488976,
-    "size": 1484,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "Lo-L-a1n8DcYsKouBp9Py",
-    "name": "cmsy10.pfb",
-    "path": "/.texlyre_cache/__tex/cmsy10.pfb",
-    "type": "file",
-    "createdAt": 1795101488985,
-    "lastModified": 1795101488985,
-    "size": 32569,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
-    "id": "MVzdk_15f7Kt7DvLbhMQO",
-    "name": "kvsetkeys.sty",
-    "path": "/.texlyre_cache/__tex/kvsetkeys.sty",
-    "type": "file",
-    "createdAt": 1795101488957,
-    "lastModified": 1795101488957,
-    "size": 13807,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "MqWwZMrqFgtNrO_dnz2nZ",
-    "name": "translator-basic-dictionary-English.dict",
-    "path": "/.texlyre_cache/__tex/translator-basic-dictionary-English.dict",
-    "type": "file",
-    "createdAt": 1795101488965,
-    "lastModified": 1795101488965,
-    "size": 3435,
-    "mimeType": "application/octet-stream",
     "isBinary": true
   },
   {
@@ -778,28 +200,6 @@
     "isBinary": true
   },
   {
-    "id": "Ngr4q0aGFa7NFf1KuCIdg",
-    "name": "cmmi12.tfm",
-    "path": "/.texlyre_cache/__tex/cmmi12.tfm",
-    "type": "file",
-    "createdAt": 1795101488968,
-    "lastModified": 1795101488968,
-    "size": 1524,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "Nqvfu5phHoBKTzYN-XMX0",
-    "name": "cmr17.pfb",
-    "path": "/.texlyre_cache/__tex/cmr17.pfb",
-    "type": "file",
-    "createdAt": 1795101488983,
-    "lastModified": 1795101488983,
-    "size": 32362,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
     "id": "NyEWiZJJKgCvtiu3sPOYQ",
     "name": "convergence_plot_Huhnerberg.png",
     "path": "/figures/convergence_plot_Huhnerberg.png",
@@ -809,83 +209,6 @@
     "size": 142985,
     "mimeType": "image/png",
     "isBinary": true
-  },
-  {
-    "id": "OhXM9yb1xema3TLLr1X8n",
-    "name": "cmss12.tfm",
-    "path": "/.texlyre_cache/__tex/cmss12.tfm",
-    "type": "file",
-    "createdAt": 1795101488975,
-    "lastModified": 1795101488975,
-    "size": 1324,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "PHEkvcFL9R2F6KozjZHmV",
-    "name": "cmbx6.tfm",
-    "path": "/.texlyre_cache/__tex/cmbx6.tfm",
-    "type": "file",
-    "createdAt": 1795101488980,
-    "lastModified": 1795101488980,
-    "size": 1344,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "PKj2YVApVDEBBPg78ykRs",
-    "name": "cmsy6.tfm",
-    "path": "/.texlyre_cache/__tex/cmsy6.tfm",
-    "type": "file",
-    "createdAt": 1795101488970,
-    "lastModified": 1795101488970,
-    "size": 1116,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "POL3w2qbU1xwfJBoIVW8X",
-    "name": "iftex.sty",
-    "path": "/.texlyre_cache/__tex/iftex.sty",
-    "type": "file",
-    "createdAt": 1795101488930,
-    "lastModified": 1795101488930,
-    "size": 6902,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "PSYmj8Ll0J1SbiVdgqOBx",
-    "name": "cmmi8.tfm",
-    "path": "/.texlyre_cache/__tex/cmmi8.tfm",
-    "type": "file",
-    "createdAt": 1795101488969,
-    "lastModified": 1795101488969,
-    "size": 1520,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "PSgiChoYrA9OrHW0ukNG0",
-    "name": "ltcaption.sty",
-    "path": "/.texlyre_cache/__tex/ltcaption.sty",
-    "type": "file",
-    "createdAt": 1795101488989,
-    "lastModified": 1795101488989,
-    "size": 7020,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "PeLARehuHWaIkFZGCs5Jj",
-    "name": "cleveref.sty",
-    "path": "/.texlyre_cache/__tex/cleveref.sty",
-    "type": "file",
-    "createdAt": 1795101488964,
-    "lastModified": 1795101488964,
-    "size": 329481,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
   },
   {
     "id": "PrGhG0KWJOLmlSsd4OJ4C",
@@ -899,191 +222,15 @@
     "isBinary": true
   },
   {
-    "id": "QHTuQ6gJpGxzPStBVsnRB",
-    "name": "cmtt10.pfb",
-    "path": "/.texlyre_cache/__tex/cmtt10.pfb",
-    "type": "file",
-    "createdAt": 1795101488988,
-    "lastModified": 1795101488988,
-    "size": 31099,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
-    "id": "Qm9mno8kn4YeSSbsv-A57",
-    "name": "msbm7.tfm",
-    "path": "/.texlyre_cache/__tex/msbm7.tfm",
-    "type": "file",
-    "createdAt": 1795101488975,
-    "lastModified": 1795101488975,
-    "size": 940,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "R-caM45tUjaVtNhzQM5Wm",
-    "name": "bigintcalc.sty",
-    "path": "/.texlyre_cache/__tex/bigintcalc.sty",
-    "type": "file",
-    "createdAt": 1795101488962,
-    "lastModified": 1795101488962,
-    "size": 40635,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "RlOi_T1aBr1gx1rtIaJdY",
-    "name": "elsarticle.cls",
-    "path": "/.texlyre_cache/__tex/elsarticle.cls",
-    "type": "file",
-    "createdAt": 1795101488807,
-    "lastModified": 1795101488807,
-    "size": 33494,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "SD4ZhZVvuNaNYnA0s-rYG",
-    "name": "array.sty",
-    "path": "/.texlyre_cache/__tex/array.sty",
-    "type": "file",
-    "createdAt": 1795101488926,
-    "lastModified": 1795101488926,
-    "size": 12560,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "SPCYDR5EiDwfQad0cwifJ",
-    "name": "cmr8.tfm",
-    "path": "/.texlyre_cache/__tex/cmr8.tfm",
-    "type": "file",
-    "createdAt": 1795101488968,
-    "lastModified": 1795101488968,
-    "size": 1292,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "SxPhwrpxJr_zINXIWJYnD",
-    "name": "cmmi10.pfb",
-    "path": "/.texlyre_cache/__tex/cmmi10.pfb",
-    "type": "file",
-    "createdAt": 1795101488989,
-    "lastModified": 1795101488989,
-    "size": 36299,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
-    "id": "TvRG3RU59QRg2gBQ4AwDL",
-    "name": "cmti7.tfm",
-    "path": "/.texlyre_cache/__tex/cmti7.tfm",
-    "type": "file",
-    "createdAt": 1795101488979,
-    "lastModified": 1795101488979,
-    "size": 1492,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "U1bqkhAYGbHbuuAVVMd0S",
-    "name": "cmtt12.tfm",
-    "path": "/.texlyre_cache/__tex/cmtt12.tfm",
-    "type": "file",
-    "createdAt": 1795101488976,
-    "lastModified": 1795101488976,
-    "size": 772,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "UKpoTsR8GA5IE2X5m98ID",
-    "name": "ltxcmds.sty",
-    "path": "/.texlyre_cache/__tex/ltxcmds.sty",
-    "type": "file",
-    "createdAt": 1795101488956,
-    "lastModified": 1795101488956,
-    "size": 18552,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "VZL67WDiCYUclgSIES_mw",
-    "name": "amsmath.sty",
-    "path": "/.texlyre_cache/__tex/amsmath.sty",
-    "type": "file",
-    "createdAt": 1795101488842,
-    "lastModified": 1795101488842,
-    "size": 85660,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
     "id": "VcrMoC5Syjekan6r18Gls",
     "name": "main_v1.tex",
     "path": "/main_v1.tex",
     "type": "file",
     "createdAt": 1795098214954,
-    "lastModified": 1795098225911,
-    "size": 193247,
+    "lastModified": 1795102602582,
+    "size": 193249,
     "mimeType": "application/x-tex",
     "isBinary": false
-  },
-  {
-    "id": "Vf80QmTDkpFHaO0G7fKvV",
-    "name": "natbib.sty",
-    "path": "/.texlyre_cache/__tex/natbib.sty",
-    "type": "file",
-    "createdAt": 1795101488839,
-    "lastModified": 1795101488839,
-    "size": 45458,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "W5e3u3fUDsAkigrEvMHXe",
-    "name": "cmr12.pfb",
-    "path": "/.texlyre_cache/__tex/cmr12.pfb",
-    "type": "file",
-    "createdAt": 1795101488983,
-    "lastModified": 1795101488983,
-    "size": 32722,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
-    "id": "W9n1AnxR9OcVpyDGNY95A",
-    "name": "trig.sty",
-    "path": "/.texlyre_cache/__tex/trig.sty",
-    "type": "file",
-    "createdAt": 1795101488833,
-    "lastModified": 1795101488833,
-    "size": 3976,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "WNOyir7jRCunRYqMpw6qx",
-    "name": "siunitx.sty",
-    "path": "/.texlyre_cache/__tex/siunitx.sty",
-    "type": "file",
-    "createdAt": 1795101488933,
-    "lastModified": 1795101488933,
-    "size": 277221,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "Wb-Enwp-yt9N26YoEuDmw",
-    "name": "cmex10.tfm",
-    "path": "/.texlyre_cache/__tex/cmex10.tfm",
-    "type": "file",
-    "createdAt": 1795101488970,
-    "lastModified": 1795101488970,
-    "size": 992,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
   },
   {
     "id": "X5N7gqG_wGBmgy1unyySe",
@@ -1097,72 +244,6 @@
     "isBinary": true
   },
   {
-    "id": "XRr0YseXcJ5LWTEDHKm9T",
-    "name": "float.sty",
-    "path": "/.texlyre_cache/__tex/float.sty",
-    "type": "file",
-    "createdAt": 1795101488919,
-    "lastModified": 1795101488919,
-    "size": 6749,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "XXbzJqEsj6weRNr_GGibd",
-    "name": "cmr12.tfm",
-    "path": "/.texlyre_cache/__tex/cmr12.tfm",
-    "type": "file",
-    "createdAt": 1795101488816,
-    "lastModified": 1795101488816,
-    "size": 1288,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "Xh43zDqCGCf3oPIEvcIvO",
-    "name": "etexcmds.sty",
-    "path": "/.texlyre_cache/__tex/etexcmds.sty",
-    "type": "file",
-    "createdAt": 1795101488961,
-    "lastModified": 1795101488961,
-    "size": 7734,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "Y9WXaPAvCwDSerfZRkvtO",
-    "name": "cmr8.pfb",
-    "path": "/.texlyre_cache/__tex/cmr8.pfb",
-    "type": "file",
-    "createdAt": 1795101488984,
-    "lastModified": 1795101488984,
-    "size": 32726,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
-    "id": "ZlPCDZvOe40pemkJCjbEx",
-    "name": "mt-msa.cfg",
-    "path": "/.texlyre_cache/__tex/mt-msa.cfg",
-    "type": "file",
-    "createdAt": 1795101488972,
-    "lastModified": 1795101488972,
-    "size": 5893,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "ZyFWpgFFfbZaUt6SvxGwC",
-    "name": "tabularx.sty",
-    "path": "/.texlyre_cache/__tex/tabularx.sty",
-    "type": "file",
-    "createdAt": 1795101488924,
-    "lastModified": 1795101488924,
-    "size": 7148,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
     "id": "_0l4Dsg_8y5Wi6iMJYBlB",
     "name": "pairs_plot_control.png",
     "path": "/figures/pairs_plot_control.png",
@@ -1174,122 +255,12 @@
     "isBinary": true
   },
   {
-    "id": "_GUdDh0glc18HnnQ4bQaS",
-    "name": "microtype.sty",
-    "path": "/.texlyre_cache/__tex/microtype.sty",
-    "type": "file",
-    "createdAt": 1795101488954,
-    "lastModified": 1795101488954,
-    "size": 71539,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
     "id": "_SystsHly6T0gKVeUtQES",
     "name": "figures",
     "path": "/figures",
     "type": "directory",
     "createdAt": 1793882317066,
     "lastModified": 1793882317066
-  },
-  {
-    "id": "_kdaouLGmU_vuQcMeuuZv",
-    "name": "hycolor.sty",
-    "path": "/.texlyre_cache/__tex/hycolor.sty",
-    "type": "file",
-    "createdAt": 1795101488959,
-    "lastModified": 1795101488959,
-    "size": 17914,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "_yydOnJ5pZBekynZUAcQf",
-    "name": "cmr6.pfb",
-    "path": "/.texlyre_cache/__tex/cmr6.pfb",
-    "type": "file",
-    "createdAt": 1795101488984,
-    "lastModified": 1795101488984,
-    "size": 32734,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
-    "id": "a3JtZHf_SFZfLGRGBnWKR",
-    "name": "tcrm0800.tfm",
-    "path": "/.texlyre_cache/__tex/tcrm0800.tfm",
-    "type": "file",
-    "createdAt": 1795101488979,
-    "lastModified": 1795101488979,
-    "size": 1536,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "aDBbWPB_oV_dGVaq22RgP",
-    "name": "caption3.sty",
-    "path": "/.texlyre_cache/__tex/caption3.sty",
-    "type": "file",
-    "createdAt": 1795101488921,
-    "lastModified": 1795101488921,
-    "size": 62012,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "aMcc4hjLtkpiIPYN0ZmEr",
-    "name": "expl3.sty",
-    "path": "/.texlyre_cache/__tex/expl3.sty",
-    "type": "file",
-    "createdAt": 1795101488933,
-    "lastModified": 1795101488933,
-    "size": 4381,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "atTkt8PzVR0xWm_jIU3Yr",
-    "name": "msam5.tfm",
-    "path": "/.texlyre_cache/__tex/msam5.tfm",
-    "type": "file",
-    "createdAt": 1795101488977,
-    "lastModified": 1795101488977,
-    "size": 924,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "b9nXAPsyYEC2HzAJVjt3P",
-    "name": "subcaption.sty",
-    "path": "/.texlyre_cache/__tex/subcaption.sty",
-    "type": "file",
-    "createdAt": 1795101488920,
-    "lastModified": 1795101488920,
-    "size": 5937,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "bDDp9I-y45aUWG-LGRgAk",
-    "name": "elsarticle-num.bst",
-    "path": "/.texlyre_cache/__tex/elsarticle-num.bst",
-    "type": "file",
-    "createdAt": 1795101488988,
-    "lastModified": 1795101488988,
-    "size": 29460,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "d3STFLiUIw7lxrz6oYnGL",
-    "name": "atbegshi.sty",
-    "path": "/.texlyre_cache/__tex/atbegshi.sty",
-    "type": "file",
-    "createdAt": 1795101488962,
-    "lastModified": 1795101488962,
-    "size": 24708,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
   },
   {
     "id": "d7jHt1adeejfrnsVAGaRW",
@@ -1300,94 +271,6 @@
     "lastModified": 1795016194725,
     "size": 174623,
     "mimeType": "image/png",
-    "isBinary": true
-  },
-  {
-    "id": "d8zYAoICxHUkCV-FjrYkk",
-    "name": "cmtt10.tfm",
-    "path": "/.texlyre_cache/__tex/cmtt10.tfm",
-    "type": "file",
-    "createdAt": 1795101488977,
-    "lastModified": 1795101488977,
-    "size": 768,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "d9O_M_I2-O-_9tFpB_rrP",
-    "name": "cmtt12.pfb",
-    "path": "/.texlyre_cache/__tex/cmtt12.pfb",
-    "type": "file",
-    "createdAt": 1795101488987,
-    "lastModified": 1795101488987,
-    "size": 24252,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
-    "id": "diWfJzWiiCElJ7hY7Rp4N",
-    "name": "cmsy10.tfm",
-    "path": "/.texlyre_cache/__tex/cmsy10.tfm",
-    "type": "file",
-    "createdAt": 1795101488969,
-    "lastModified": 1795101488969,
-    "size": 1124,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "dqAb6I3TJu3rX4ykXF-sN",
-    "name": "mt-msb.cfg",
-    "path": "/.texlyre_cache/__tex/mt-msb.cfg",
-    "type": "file",
-    "createdAt": 1795101488974,
-    "lastModified": 1795101488974,
-    "size": 5558,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "e8cwi2-1kZDnu4V5Dxzyl",
-    "name": "cmr10.pfb",
-    "path": "/.texlyre_cache/__tex/cmr10.pfb",
-    "type": "file",
-    "createdAt": 1795101488983,
-    "lastModified": 1795101488983,
-    "size": 35752,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
-    "id": "eoBFRWlXAceLGbGKeOevH",
-    "name": "infwarerr.sty",
-    "path": "/.texlyre_cache/__tex/infwarerr.sty",
-    "type": "file",
-    "createdAt": 1795101488957,
-    "lastModified": 1795101488957,
-    "size": 8356,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "fFzaT1sTrc83tJtUc_oZv",
-    "name": "cmex7.tfm",
-    "path": "/.texlyre_cache/__tex/cmex7.tfm",
-    "type": "file",
-    "createdAt": 1795101488971,
-    "lastModified": 1795101488971,
-    "size": 1004,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "fY8UOA12k-zHYnHE49xcA",
-    "name": "cmti12.pfb",
-    "path": "/.texlyre_cache/__tex/cmti12.pfb",
-    "type": "file",
-    "createdAt": 1795101488987,
-    "lastModified": 1795101488987,
-    "size": 36118,
-    "mimeType": "application/x-font-type1",
     "isBinary": true
   },
   {
@@ -1413,23 +296,12 @@
     "isBinary": true
   },
   {
-    "id": "g-IvTUDPB9m94KxsRisvp",
-    "name": "siunitx-abbreviations.cfg",
-    "path": "/.texlyre_cache/__tex/siunitx-abbreviations.cfg",
-    "type": "file",
-    "createdAt": 1795101488965,
-    "lastModified": 1795101488965,
-    "size": 4745,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "g0PJIP0DdhkM8KIHtP-ah",
+    "id": "g4qqKRo_1g1zcDDM_0Q1W",
     "name": "__output",
     "path": "/.texlyre_src/__output",
     "type": "directory",
-    "createdAt": 1795101488698,
-    "lastModified": 1795101488698
+    "createdAt": 1795103696333,
+    "lastModified": 1795103696333
   },
   {
     "id": "g7ez93RQGzO9ZJiH8ijdk",
@@ -1443,187 +315,6 @@
     "isBinary": true
   },
   {
-    "id": "h42nXWy7wQZxU-uDIeqLV",
-    "name": "intcalc.sty",
-    "path": "/.texlyre_cache/__tex/intcalc.sty",
-    "type": "file",
-    "createdAt": 1795101488960,
-    "lastModified": 1795101488960,
-    "size": 31769,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "h_4BjwlxpyXb_g4U9UPkP",
-    "name": "makecell.sty",
-    "path": "/.texlyre_cache/__tex/makecell.sty",
-    "type": "file",
-    "createdAt": 1795101488928,
-    "lastModified": 1795101488928,
-    "size": 15773,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "hlD2vv9Bg1drqpfyVE-k1",
-    "name": "calc.sty",
-    "path": "/.texlyre_cache/__tex/calc.sty",
-    "type": "file",
-    "createdAt": 1795101488916,
-    "lastModified": 1795101488916,
-    "size": 10216,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "j-VgBhg_Vu_ZoOHkg-IOZ",
-    "name": "kvoptions.sty",
-    "path": "/.texlyre_cache/__tex/kvoptions.sty",
-    "type": "file",
-    "createdAt": 1795101488960,
-    "lastModified": 1795101488960,
-    "size": 22520,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "jExdINFxcNPhf_JIa6kCd",
-    "name": "l3backend-pdfmode.def",
-    "path": "/.texlyre_cache/__tex/l3backend-pdfmode.def",
-    "type": "file",
-    "createdAt": 1795101488934,
-    "lastModified": 1795101488934,
-    "size": 25404,
-    "mimeType": "text/plain",
-    "isBinary": false
-  },
-  {
-    "id": "jqNQEaL4BMJ2A01Td87Zh",
-    "name": ".texlyre_cache",
-    "path": "/.texlyre_cache",
-    "type": "directory",
-    "createdAt": 1795101488698,
-    "lastModified": 1795101488698
-  },
-  {
-    "id": "k-_3Rp-TssXawn0sj8Rt7",
-    "name": "msam7.tfm",
-    "path": "/.texlyre_cache/__tex/msam7.tfm",
-    "type": "file",
-    "createdAt": 1795101488973,
-    "lastModified": 1795101488973,
-    "size": 928,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "kOX86gLOu1GTeTGxbUKmP",
-    "name": "auxhook.sty",
-    "path": "/.texlyre_cache/__tex/auxhook.sty",
-    "type": "file",
-    "createdAt": 1795101488959,
-    "lastModified": 1795101488959,
-    "size": 3935,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "kc-uTipcMOp3a7knqrkjB",
-    "name": "refcount.sty",
-    "path": "/.texlyre_cache/__tex/refcount.sty",
-    "type": "file",
-    "createdAt": 1795101488967,
-    "lastModified": 1795101488967,
-    "size": 9878,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "kfk1CrNboxTwV1z2UUbcc",
-    "name": "msbm5.tfm",
-    "path": "/.texlyre_cache/__tex/msbm5.tfm",
-    "type": "file",
-    "createdAt": 1795101488978,
-    "lastModified": 1795101488978,
-    "size": 940,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "kw8cxx367vru2EQKCW0QL",
-    "name": "graphics.cfg",
-    "path": "/.texlyre_cache/__tex/graphics.cfg",
-    "type": "file",
-    "createdAt": 1795101488835,
-    "lastModified": 1795101488835,
-    "size": 1224,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "lRqCNtYkgJpi-W8o8wdvK",
-    "name": "tcrm1200.tfm",
-    "path": "/.texlyre_cache/__tex/tcrm1200.tfm",
-    "type": "file",
-    "createdAt": 1795101488979,
-    "lastModified": 1795101488979,
-    "size": 1536,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "lTTCkiMtjG8TsVkq5g846",
-    "name": "translator.sty",
-    "path": "/.texlyre_cache/__tex/translator.sty",
-    "type": "file",
-    "createdAt": 1795101488937,
-    "lastModified": 1795101488937,
-    "size": 8691,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "m4uDsCaoQjqvC0tGD0mcG",
-    "name": "__dvi",
-    "path": "/.texlyre_cache/__dvi",
-    "type": "directory",
-    "createdAt": 1795101488699,
-    "lastModified": 1795101488699
-  },
-  {
-    "id": "mBq5wDm611ShxwAeElNZ6",
-    "name": "atveryend.sty",
-    "path": "/.texlyre_cache/__tex/atveryend.sty",
-    "type": "file",
-    "createdAt": 1795101488963,
-    "lastModified": 1795101488963,
-    "size": 19336,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "mpOy8ZhWncSjlIIpeJG5F",
-    "name": "umsa.fd",
-    "path": "/.texlyre_cache/__tex/umsa.fd",
-    "type": "file",
-    "createdAt": 1795101488971,
-    "lastModified": 1795101488971,
-    "size": 961,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "mqCnKUFreQMaLl3aAw9Vd",
-    "name": "microtype-pdftex.def",
-    "path": "/.texlyre_cache/__tex/microtype-pdftex.def",
-    "type": "file",
-    "createdAt": 1795101488955,
-    "lastModified": 1795101488955,
-    "size": 49144,
-    "mimeType": "text/plain",
-    "isBinary": false
-  },
-  {
     "id": "mu4pPDho5Z9RS3Lg6JPYn",
     "name": "observed_vs_predicted_panel_d14C_pools.png",
     "path": "/figures/observed_vs_predicted_panel_d14C_pools.png",
@@ -1633,28 +324,6 @@
     "size": 501961,
     "mimeType": "image/png",
     "isBinary": true
-  },
-  {
-    "id": "nOX4lqyLkm5o-ALAU7JuT",
-    "name": "microtype.cfg",
-    "path": "/.texlyre_cache/__tex/microtype.cfg",
-    "type": "file",
-    "createdAt": 1795101488955,
-    "lastModified": 1795101488955,
-    "size": 24293,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "oMfgpdjWKG1sH_OkmQL9N",
-    "name": "hyperref.sty",
-    "path": "/.texlyre_cache/__tex/hyperref.sty",
-    "type": "file",
-    "createdAt": 1795101488956,
-    "lastModified": 1795101488956,
-    "size": 238752,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
   },
   {
     "id": "oashv82J49zmmMzpH6Y_O",
@@ -1690,43 +359,13 @@
     "isBinary": false
   },
   {
-    "id": "piPwoBY31UCdinB4-GQeu",
-    "name": "cmbx10.tfm",
-    "path": "/.texlyre_cache/__tex/cmbx10.tfm",
-    "type": "file",
-    "createdAt": 1795101488981,
-    "lastModified": 1795101488981,
-    "size": 1328,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "pxIH4jF3lKiSaoq68lctF",
-    "name": ".texlyre_src",
-    "path": "/.texlyre_src",
-    "type": "directory",
-    "createdAt": 1795101488697,
-    "lastModified": 1795101488697
-  },
-  {
-    "id": "pzEPxfmUfyk-7ffQGXzyM",
-    "name": "cmr17.tfm",
-    "path": "/.texlyre_cache/__tex/cmr17.tfm",
-    "type": "file",
-    "createdAt": 1795101488978,
-    "lastModified": 1795101488978,
-    "size": 1292,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "qAGrf23WCseH10o2ulU7R",
+    "id": "pYr5HYapr3yKPC5qZ54iZ",
     "name": "main.log",
     "path": "/.texlyre_src/__output/main.log",
     "type": "file",
-    "createdAt": 1795101488706,
-    "lastModified": 1795101488706,
-    "size": 12361,
+    "createdAt": 1795103696340,
+    "lastModified": 1795103696340,
+    "size": 20221,
     "mimeType": "text/plain",
     "isBinary": false
   },
@@ -1742,17 +381,6 @@
     "isBinary": true
   },
   {
-    "id": "qdvAhF9NWdYfwnlaIJkg2",
-    "name": "cmsy8.pfb",
-    "path": "/.texlyre_cache/__tex/cmsy8.pfb",
-    "type": "file",
-    "createdAt": 1795101488986,
-    "lastModified": 1795101488986,
-    "size": 32626,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
     "id": "qj9TTThWsx65mPS6TUZai",
     "name": "plot_log_age_tt_Lime.png",
     "path": "/figures/plot_log_age_tt_Lime.png",
@@ -1762,28 +390,6 @@
     "size": 132104,
     "mimeType": "image/png",
     "isBinary": true
-  },
-  {
-    "id": "qnwvubSmIUOqWqGMflrj4",
-    "name": "tcrm0600.tfm",
-    "path": "/.texlyre_cache/__tex/tcrm0600.tfm",
-    "type": "file",
-    "createdAt": 1795101488980,
-    "lastModified": 1795101488980,
-    "size": 1536,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "r3Q-3eE1bjkXotqnaJWgP",
-    "name": "url.sty",
-    "path": "/.texlyre_cache/__tex/url.sty",
-    "type": "file",
-    "createdAt": 1795101488961,
-    "lastModified": 1795101488961,
-    "size": 12796,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
   },
   {
     "id": "r8pjOJ-rUQ7AeZnOeTDd4",
@@ -1808,50 +414,6 @@
     "isBinary": true
   },
   {
-    "id": "rMe8JbaR4FTBtKPRiKCkg",
-    "name": "cmbx5.tfm",
-    "path": "/.texlyre_cache/__tex/cmbx5.tfm",
-    "type": "file",
-    "createdAt": 1795101488981,
-    "lastModified": 1795101488981,
-    "size": 1332,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "rX1kXTLqb3lz9ElqJ-0Ds",
-    "name": "cmbx8.tfm",
-    "path": "/.texlyre_cache/__tex/cmbx8.tfm",
-    "type": "file",
-    "createdAt": 1795101488980,
-    "lastModified": 1795101488980,
-    "size": 1332,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "rXmn_FNKfxBG2x0A-m84m",
-    "name": "keyval.sty",
-    "path": "/.texlyre_cache/__tex/keyval.sty",
-    "type": "file",
-    "createdAt": 1795101488829,
-    "lastModified": 1795101488829,
-    "size": 2590,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "sUirTUMtaDPXMZ_fGnUQQ",
-    "name": "letltxmacro.sty",
-    "path": "/.texlyre_cache/__tex/letltxmacro.sty",
-    "type": "file",
-    "createdAt": 1795101488959,
-    "lastModified": 1795101488959,
-    "size": 5766,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
     "id": "sbulNlKUegl78WtBFSvgv",
     "name": "temporal_porewater_Fe.png",
     "path": "/figures/temporal_porewater_Fe.png",
@@ -1874,70 +436,20 @@
     "isBinary": true
   },
   {
-    "id": "tKg3zd2hGHw0Sli-eHx9s",
-    "name": "cmsy8.tfm",
-    "path": "/.texlyre_cache/__tex/cmsy8.tfm",
-    "type": "file",
-    "createdAt": 1795101488970,
-    "lastModified": 1795101488970,
-    "size": 1120,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
+    "id": "sv4C1uYAivy_1rLAXoQaC",
+    "name": "__tex",
+    "path": "/.texlyre_cache/__tex",
+    "type": "directory",
+    "createdAt": 1795103696335,
+    "lastModified": 1795103696335
   },
   {
-    "id": "teEamdmnDuburw7ZorxJE",
-    "name": "graphics.sty",
-    "path": "/.texlyre_cache/__tex/graphics.sty",
-    "type": "file",
-    "createdAt": 1795101488830,
-    "lastModified": 1795101488830,
-    "size": 16932,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "tmlsMV9pYUZrv5qPxbLFd",
-    "name": "l3keys2e.sty",
-    "path": "/.texlyre_cache/__tex/l3keys2e.sty",
-    "type": "file",
-    "createdAt": 1795101488935,
-    "lastModified": 1795101488935,
-    "size": 4603,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "to-4oOcD1ZVg19q5Mk0A2",
-    "name": "cmbx12.pfb",
-    "path": "/.texlyre_cache/__tex/cmbx12.pfb",
-    "type": "file",
-    "createdAt": 1795101488982,
-    "lastModified": 1795101488982,
-    "size": 32080,
-    "mimeType": "application/x-font-type1",
-    "isBinary": true
-  },
-  {
-    "id": "tzMSm3RvhidFCUxu6S0Vj",
-    "name": "umsb.fd",
-    "path": "/.texlyre_cache/__tex/umsb.fd",
-    "type": "file",
-    "createdAt": 1795101488973,
-    "lastModified": 1795101488973,
-    "size": 961,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "uEyzC4UZd_F63aD4aoXVs",
-    "name": "msbm10.tfm",
-    "path": "/.texlyre_cache/__tex/msbm10.tfm",
-    "type": "file",
-    "createdAt": 1795101488973,
-    "lastModified": 1795101488973,
-    "size": 908,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
+    "id": "u8YPg-JGVLqb34a51qbRH",
+    "name": ".texlyre_cache",
+    "path": "/.texlyre_cache",
+    "type": "directory",
+    "createdAt": 1795103696334,
+    "lastModified": 1795103696334
   },
   {
     "id": "vpA0t1dmLhqLLONKWrd08",
@@ -1962,83 +474,6 @@
     "isBinary": true
   },
   {
-    "id": "x3hCY4ecYZhsWM0ZA3yO0",
-    "name": "gettitlestring.sty",
-    "path": "/.texlyre_cache/__tex/gettitlestring.sty",
-    "type": "file",
-    "createdAt": 1795101488967,
-    "lastModified": 1795101488967,
-    "size": 8371,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "xRi9scGzvGjTedaZiZZ4F",
-    "name": "nameref.sty",
-    "path": "/.texlyre_cache/__tex/nameref.sty",
-    "type": "file",
-    "createdAt": 1795101488966,
-    "lastModified": 1795101488966,
-    "size": 13244,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "xTIbmzNqQdayhbWQCLtYJ",
-    "name": "amssymb.sty",
-    "path": "/.texlyre_cache/__tex/amssymb.sty",
-    "type": "file",
-    "createdAt": 1795101488907,
-    "lastModified": 1795101488907,
-    "size": 13829,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "xjnfMBzq6iQM7-fTVxQeu",
-    "name": "pdftex.def",
-    "path": "/.texlyre_cache/__tex/pdftex.def",
-    "type": "file",
-    "createdAt": 1795101488837,
-    "lastModified": 1795101488837,
-    "size": 17334,
-    "mimeType": "text/plain",
-    "isBinary": false
-  },
-  {
-    "id": "xqOF4jLvf3w_i_5vKADsR",
-    "name": "amsbsy.sty",
-    "path": "/.texlyre_cache/__tex/amsbsy.sty",
-    "type": "file",
-    "createdAt": 1795101488849,
-    "lastModified": 1795101488849,
-    "size": 2211,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
-    "id": "yUWCFvRvmiduQIK8uSrML",
-    "name": "hpdftex.def",
-    "path": "/.texlyre_cache/__tex/hpdftex.def",
-    "type": "file",
-    "createdAt": 1795101488962,
-    "lastModified": 1795101488962,
-    "size": 50630,
-    "mimeType": "text/plain",
-    "isBinary": false
-  },
-  {
-    "id": "yftMfMQPZA4Xx2T2L4cY6",
-    "name": "kvdefinekeys.sty",
-    "path": "/.texlyre_cache/__tex/kvdefinekeys.sty",
-    "type": "file",
-    "createdAt": 1795101488958,
-    "lastModified": 1795101488958,
-    "size": 5412,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
-  },
-  {
     "id": "yq6sPubfmQcWvuUPONywZ",
     "name": "tessier_comparisons.png",
     "path": "/figures/tessier_comparisons.png",
@@ -2059,58 +494,6 @@
     "size": 118510,
     "mimeType": "image/png",
     "isBinary": true
-  },
-  {
-    "id": "zC2V0Y8Dt4raLDGfF0ASF",
-    "name": "cmtt8.tfm",
-    "path": "/.texlyre_cache/__tex/cmtt8.tfm",
-    "type": "file",
-    "createdAt": 1795101488976,
-    "lastModified": 1795101488976,
-    "size": 768,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "zaZ8ygq4R6TIgPm2bXqpL",
-    "name": "cmr10.tfm",
-    "path": "/.texlyre_cache/__tex/cmr10.tfm",
-    "type": "file",
-    "createdAt": 1795101488980,
-    "lastModified": 1795101488980,
-    "size": 1296,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "zd-EnxBPUhXhKVHCIu7Zr",
-    "name": "__work",
-    "path": "/.texlyre_src/__work",
-    "type": "directory",
-    "createdAt": 1795101488698,
-    "lastModified": 1795101488698
-  },
-  {
-    "id": "zt8uTBBcjjXyGz1XgQz4Z",
-    "name": "cmex8.tfm",
-    "path": "/.texlyre_cache/__tex/cmex8.tfm",
-    "type": "file",
-    "createdAt": 1795101488970,
-    "lastModified": 1795101488970,
-    "size": 988,
-    "mimeType": "application/x-tex-tfm",
-    "isBinary": true
-  },
-  {
-    "id": "zy_krpRhuK4clizS7rLyl",
-    "name": "uniquecounter.sty",
-    "path": "/.texlyre_cache/__tex/uniquecounter.sty",
-    "type": "file",
-    "createdAt": 1795101488964,
-    "lastModified": 1795101488964,
-    "size": 7008,
-    "mimeType": "application/octet-stream",
-    "isBinary": false
   },
   {
     "id": "1Ma-r8FYMH7FPo2lxnWOA",
